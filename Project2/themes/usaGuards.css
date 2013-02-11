@@ -59,7 +59,7 @@
 .ui-overlay-a {
 	border: 1px solid #858585 /*{a-body-border}*/;
 	color: #000000 /*{a-body-color}*/;
-	text-shadow: 0 /*{a-body-shadow-x}*/ -1px /*{a-body-shadow-y}*/ 0 /*{a-body-shadow-radius}*/ #eeeeee /*{a-body-shadow-color}*/;
+	text-shadow: 0 /*{a-body-shadow-x}*/ 1px /*{a-body-shadow-y}*/ 0 /*{a-body-shadow-radius}*/ #eeeeee /*{a-body-shadow-color}*/;
 	background: #f2f2f2 /*{a-body-background-color}*/;
 	background-image: -webkit-gradient(linear, left top, left bottom, from( #FFFFFF /*{a-body-background-start}*/), to( #d9d9d9 /*{a-body-background-end}*/)); /* Saf4+, Chrome */
 	background-image: -webkit-linear-gradient( #FFFFFF /*{a-body-background-start}*/, #d9d9d9 /*{a-body-background-end}*/); /* Chrome 10+, Saf5.1+ */
@@ -105,7 +105,7 @@
 	background: #C3C3C3 /*{a-bup-background-color}*/;
 	font-weight: bold;
 	color: #545454 /*{a-bup-color}*/;
-	text-shadow: 0 /*{a-bup-shadow-x}*/ -1px /*{a-bup-shadow-y}*/ 0 /*{a-bup-shadow-radius}*/ #ffffff /*{a-bup-shadow-color}*/;
+	text-shadow: 0 /*{a-bup-shadow-x}*/ 1px /*{a-bup-shadow-y}*/ 0 /*{a-bup-shadow-radius}*/ #ffffff /*{a-bup-shadow-color}*/;
 	background-image: -webkit-gradient(linear, left top, left bottom, from( #FFFFFF /*{a-bup-background-start}*/), to( #767676 /*{a-bup-background-end}*/)); /* Saf4+, Chrome */
 	background-image: -webkit-linear-gradient( #E5E5E5 /*{a-bup-background-start}*/, #BABABA /*{a-bup-background-end}*/); /* Chrome 10+, Saf5.1+ */
 	background-image:    -moz-linear-gradient( #E5E5E5 /*{a-bup-background-start}*/, #BABABA /*{a-bup-background-end}*/); /* FF3.6 */
@@ -122,7 +122,7 @@
 	background: #73161e /*{a-bhover-background-color}*/;
 	font-weight: bold;
 	color: #ffffff /*{a-bhover-color}*/;
-	text-shadow: 0 /*{a-bhover-shadow-x}*/ -1px /*{a-bhover-shadow-y}*/ 0 /*{a-bhover-shadow-radius}*/ #FFFFFF /*{a-bhover-shadow-color}*/;
+	text-shadow: 0 /*{a-bhover-shadow-x}*/ 1px /*{a-bhover-shadow-y}*/ 0 /*{a-bhover-shadow-radius}*/ #FFFFFF /*{a-bhover-shadow-color}*/;
 	background-image: -webkit-gradient(linear, left top, left bottom, from( #73161e /*{a-bhover-background-start}*/), to( #73161e /*{a-bhover-background-end}*/)); /* Saf4+, Chrome */
 	background-image: -webkit-linear-gradient( #73161e /*{a-bhover-background-start}*/, #73161e /*{a-bhover-background-end}*/); /* Chrome 10+, Saf5.1+ */
 	background-image:    -moz-linear-gradient( #73161e /*{a-bhover-background-start}*/, #73161e /*{a-bhover-background-end}*/); /* FF3.6 */

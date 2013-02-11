@@ -45,7 +45,7 @@ This is the css style sheet for my addItem page
 			background: #112074 /*{a-bhover-background-color}*/;
 			font-weight: bold;
 			color: #ffffff /*{a-bhover-color}*/;
-			text-shadow: 0 /*{a-bhover-shadow-x}*/ -1px /*{a-bhover-shadow-y}*/ 0 /*{a-bhover-shadow-radius}*/ #FFFFFF /*{a-bhover-shadow-color}*/;
+			text-shadow: 0 /*{a-bhover-shadow-x}*/ 1px /*{a-bhover-shadow-y}*/ 0 /*{a-bhover-shadow-radius}*/ #FFFFFF /*{a-bhover-shadow-color}*/;
 			background-image: -webkit-gradient(linear, left top, left bottom, from( #112074 /*{a-bhover-background-start}*/), to( #112074 /*{a-bhover-					background-end}*/)); /* Saf4+, Chrome */
 			background-image: -webkit-linear-gradient( #112074 /*{a-bhover-background-start}*/, #112074 /*{a-bhover-background-end}*/); /* Chrome 10+, Saf5.1+ 			*/
 			background-image:    -moz-linear-gradient( #112074 /*{a-bhover-background-start}*/, #112074 /*{a-bhover-background-end}*/); /* FF3.6 */
