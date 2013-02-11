@@ -7,6 +7,7 @@
 	
 	$(#phoneNumber).on('pageinit', function()
 	{
+		$('#phoneNumber').empty();
 		$.ajax(
 		{    
 			url: "data.json", type: "GET", dataType : "json", //Getting JSON data, located in data.json   
