@@ -1,9 +1,28 @@
 //Brenna Pavlinchak
-//MiU 1212
+//ASD 1302
 //Project 3
-//12/04/2012
+//02/10/2013
 
 
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		//Start of Refactored CRUD for JQM javascript
+		
 		$('#home').on('pageinit', function()
 		{
 			//code needed for home page goes here
@@ -18,7 +37,7 @@
 		myForm.validate(
 		{
 				    
-					invalidHandler: function(form, validator) 
+					invalidHandler: function(form, validator) //Form validator 
 					{
 						errorFormLink.click();
 						var html = '';
@@ -41,29 +60,6 @@
 					}
 		});
 		
-		
-		$(document).ajaxComplete(function() {
-		
-		$( ".log" ).text( "Triggered ajaxComplete handler." );
-		});
-		
-		$.ajax(
-		{    
-			url: "data.json", type: "GET", dataType : "json",    
-			
-			success:function(data, status)
-			{    
-			console.log(status, data);    
-			}
-		
-		});
-		
-		
-		$( ".trigger" ).click(function() {
-		
-		$( ".result" ).load( "index.html" );
-		});
-		
 			
 			//any other code needed for addItem page goes here
 			
@@ -78,25 +74,23 @@
 			});
 			
 		});
-		
-		//The functions below can go inside or outside the pageinit function for the page in which it is needed.
-		
+				
 		var autofillData = function ()
 		{
-			//old code for reference
+			/*old code for reference
 			 for(var n in json)
                {
                    var id = Math.floor(Math.random()*100000001);
                    localStorage.setItem(id, JSON.stringify(json[n]));
                    
-               }//end of old code
+               }//end of old code*/
                
                var id
                
                for(var n in json)
                {
                   id = Math.floor(Math.random()*100000001);
-                  localStorage.setItem(id, JSON.stringify(json[n]));
+                  localStorage.setItem(id, JSON.stringify(json[n]));//Still need to refactor
                    
                }
                
@@ -107,7 +101,7 @@
 		
 		};
 		
-		var storeData = function(data)
+		var storeData = function(data)//Store data (refactored code)
 		{
 			var key;
 			var id;
@@ -148,7 +142,7 @@
                 	
 		};//End of deleteItem Function
 							
-		var clearLocal = function()
+	/*	var clearLocal = function()//not sure if this is refactored yet.
 		{
 			 
 			if(localStorage.length === 0)
@@ -163,4 +157,4 @@
                     window.location.reload();
                     return false;
                 }
-		};//end clear local
+		};//end clear local */
