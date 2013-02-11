@@ -5,7 +5,7 @@
 
 
 	
-	$(#pool).on('pageinit', function()
+	$(#phoneNumber).on('pageinit', function()
 	{
 		$.ajax(
 		{    
@@ -15,9 +15,16 @@
 			{    
 			console.log(This is my JSON Data, dataCall);    
 			}
-				for(i=0, len=dataCall.?.length; i<len; i++)
+				for(i=0, len=dataCall.lifeguards.length; i<len; i++)
 				{
+					var guard = dataCall.lifeguard[i];
 					
+					$('' +
+						'<div class="lifeguards">'+
+							'<h3>' + guard.lastName + guard.firstName + '</h3>'+
+							'<p>' + guard.phoneNumber + '</p>'+
+						'</div>'
+					 ).appendTo(#phoneNumber)
 				}
 		});
 
