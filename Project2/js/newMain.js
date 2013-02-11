@@ -4,6 +4,61 @@
 //02/10/2013
 
 
+	
+	$(#pool).on('pageinit', function()
+	{
+		$.ajax(
+		{    
+			url: "data.json", type: "GET", dataType : "json", //Getting JSON data, located in data.json   
+			
+			success:function(dataCall) //Going to use dataCall for the name to call my data
+			{    
+			console.log(This is my JSON Data, dataCall);    
+			}
+				for(i=0, len=dataCall.?.length; i<len; i++)
+				{
+					
+				}
+		});
+
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	/*	$(document).ajaxComplete(function() {
+		
+		$( ".log" ).text( "Triggered ajaxComplete handler." );
+		});
+		
+		$.ajax(
+		{    
+			url: "data.json", type: "GET", dataType : "json",    
+			
+			success:function(data, status)
+			{    
+			console.log(status, data);    
+			}
+		
+		});
+		
+		
+		$( ".trigger" ).click(function() {
+		
+		$( ".result" ).load( "index.html" );
+		}); */ 
+		//Not sure how to use the above code
 		
 		
 		
@@ -19,8 +74,7 @@
 		
 		
 		
-		
-		
+
 		//Start of Refactored CRUD for JQM javascript
 		
 		$('#home').on('pageinit', function()
