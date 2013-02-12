@@ -98,21 +98,7 @@ var phoneNumber = 555-555-5555;
 						storeData(data);
 					}
 		});
-		
-			
-			//any other code needed for addItem page goes here
-			
-			$("#displayData").click(function() 
-			{
-			getData();
-			});
-			
-			$("#clearData").click(function() 
-			{
-			clearLocal();
-			});
-			
-		});
+	
 				
 		
 		var storeData = function(data)//Store data (refactored code)
