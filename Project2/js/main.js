@@ -28,7 +28,7 @@
 							'<h3>' + guard.lastName + guard.firstName + '</h3>'+
 							'<p>' + guard.phoneNumber + '</p>'+
 						'</div>'
-					 ).appendTo(#lifeguards)
+					 ).appendTo("#lifeguards")
 				}
 			}
 		});
