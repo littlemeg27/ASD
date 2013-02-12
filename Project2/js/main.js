@@ -28,7 +28,7 @@ var phoneNumber = 555-555-5555;
 							'<h3>' + guard.lastName + guard.firstName + '</h3>'+
 							'<p>' + guard.phoneNumber + '</p>'+
 						'</div>'
-					 ).appendTo(#phoneNumber)
+					 ).appendTo(#lifeguards)
 				}
 			}
 		});
