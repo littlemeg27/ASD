@@ -16,7 +16,7 @@ This is the css style sheet for my addItem page
 		
 		#errorFormLink
 		{
-			display: none;
+			display: none; !important
 		}
 		
 		p.cta

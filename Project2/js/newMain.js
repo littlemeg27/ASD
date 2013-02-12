@@ -2,20 +2,23 @@
 //ASD 1302
 //Project 3
 //02/10/2013
-
+var phoneNumber = 555-555-5555;
 
 	
-	$(#phoneNumber).on('pageinit', function()
+	$("#loadJSON").on('click', function()
 	{
-		$('#phoneNumber').empty();
+	
+	
+		//$('#phoneNumber').empty();
 		$.ajax(
 		{    
-			url: "data.json", type: "GET", dataType : "json", //Getting JSON data, located in data.json   
-			
+			url: "data.json", 
+			type: "GET", 
+			dataType : "json", //Getting JSON data, located in data.json   
 			success:function(dataCall) //Going to use dataCall for the name to call my data
 			{    
 			console.log(This is my JSON Data, dataCall);    
-			}
+			
 				for(i=0, len=dataCall.lifeguards.length; i<len; i++)
 				{
 					var guard = dataCall.lifeguard[i];
@@ -27,6 +30,7 @@
 						'</div>'
 					 ).appendTo(#phoneNumber)
 				}
+			}
 		});
 
 	}

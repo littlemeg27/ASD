@@ -42,13 +42,13 @@
 			
 			<section data-role="content"><!--content open-->
 			
-				<img style="float:left" src="images/lifeguardCTA.png" alt="LifeguardCTA">
+				<a href="#home"><img src="images/lifeguardCTA.png" alt="LifeguardCTA"></a>
 				
 				<p class="cta">This is an Application to keep track of all of the lifeguards that work for U.S.A. Lifeguarding</p>
 				
 								
-				<a href="#addItem" data-role="button" data-inline="true" data-ajax="false" class="addItemButton">Add a New Lifeguard!</a><br><br>
-				
+				<p><a href="#addItem" data-role="button" data-inline="true" data-ajax="false" class="addItemButton">Add a New Lifeguard!</a></p><br><br>
+				<p><a href="#" id="loadJSON" data-role="button" data-inline="true" data-ajax="false" class="addItemButton">Load JSON</a></p>
 				
 				
 				<ul data-role="listview" data-inset="true">
@@ -88,184 +88,14 @@
 			
 			
 			<footer data-role="footer" data-id="theFooter" data-position="fixed"><!--footer open-->
-				
-				<nav data-role="navbar"><!--navbar open-->
-				
-					<ul>
-						<li><a href="#home" data-icon="home" class="ui-btn-active ui-state-persist">Home</a></li>
-						<li><a href="#newsStream" data-icon="grid">News Stream</a></li>
-						<li><a href="#about" data-icon="info">About</a></li>
-					</ul>
-				
-				</nav> <!--navbar closed-->
-				
-		
+			
 		    </footer> <!--footer closed-->
 				
 		</section> <!--page closed-->
 	<!--end Home Page-->
-	
-	
-	
-	<!--NewsStream-->
-		<div data-role="page" id="newsStream" data-add-back-btn="true"><!--page open-->
-		
-			<header data-role="header" data-position="fixed"><!--header open-->
-			
-				<h1>U.S.A. <br> Lifeguards</h1>
-				
-				</header><!--header closed-->
-	
-	
-		<section data-role="content"><!--content open-->
-			
-				<img style="float:left" src="images/lifeguardIcon.png" alt="LifeguardIcon"><br><br>
 
-			
-				<h2>Lifeguard Clock in</h2>				
-			
-				<h2>William Stoner</h2>
-				
-				<p>Clocked in at 10:30am at:</p>
-				
-				<p>Northside</p>
-				
-				<p>For: Lifeguarding</p>
-				
-				<p>10:30am 06/02/2013</p>
-				
-				
-				
-				<h2>Julianne Depaolo</h2>
-				
-				<p>Clocked in at 6:10pm at:</p>
-				
-				<p>Laurel Creek</p>
-				
-				<p>For: Swim Lessons</p>
-				
-				<p>6:10pm 06/01/2013</p>
-				
-				
-				
-				<h2>Hugh Falkner</h2>
-				
-				<p>Clocked in at 10:10am at:</p>
-				
-				<p>Rolling Hills</p>
-				
-				<p>For: Lifeguarding</p>
-				
-				<p>10:10am 06/01/2013</p>
-				
-				
-				
-				<h2>Kenya Columbia</h2>
-				
-				<p>Clocked in at 8:15am at:</p>
-				
-				<p>Knightsbridge</p>
-				
-				<p>For: Swim Lessons</p>
-				
-				<p>8:15am 05/30/2013</p>
-				
-		
-			</section><!--content closed-->
-			
-				<footer data-role="footer" data-id="theFooter" data-position="fixed" data-theme"b"><!--footer open-->
-				
-						<nav data-role="navbar" ><!--navbar open-->
-						
-							<ul>
-								<li><a href="#home" data-icon="home">Home</a></li>
-								<li><a href="#newsStream" data-icon="grid"  class="ui-btn-active ui-state-persist">News Stream</a></li>
-								<li><a href="#about" data-icon="info">About</a></li>
-							</ul>
-						
-						</nav> <!--navbar closed-->
-				
-		
-				</footer> <!--footer closed-->
-		
-			</div><!--closed-->
-	<!--end NewsStream-->
-	
-	
-	
-	<!--about-->
-		<div data-role="page" id="about" data-add-back-btn="true"><!--page open-->
-		
-			<header data-role="header" data-position="fixed"><!--header open-->
-			
-				<h1>U.S.A. <br> Lifeguards</h1>
-			
-			</header><!--header closed-->
-			
-		<section data-role="content"><!--content open-->
-			
-				<img style="float:left" src="images/lifeguardIcon.png" alt="LifeguardIcon">
-			
-				<a href="file:///Volumes/Macintosh%20HD/Users/ravenmargret/Mobile%20Development/MiU/Project4/Bronze/index.html" 
-					data-role="button" data-inline="true" data-ajax="false" data-theme="a" style="float: right">Link to my Bronze App!</a><br><br>
-					
-					<!--Link from Gold to Bronze and from Bronze to Gold fixed with data-ajax="false" from project 2 app-->
-				
-				<p>The info Page concerning all resources or links used in this project<p>
-				
-				
-				<div data-role="collapsible-set"><!--collap set open-->
-			
-					<div data-role="collapsible" data-collapsed="true" data-theme="a"><!--collap 1 open-->
-					
-						<h3>Gold App</h3>
-						<p>This is the link to my GitHub Gold App</p>
-						<p><a href="https://github.com/littlemeg27/Mobile-Development/blob/master/MiU/Project2/Gold/index.html" data-ajax="false"></a></p>
-					
-					</div><!--collap 1 closed-->
-			
-					<div data-role="collapsible" data-collapsed="true" data-theme="a"><!--collap 2 open-->
-					
-						<h3>Bronze App</h3>
-						<p>This is the link to my GitHub Bronze App</p>
-						<p><a href="https://github.com/littlemeg27/Mobile-Development/blob/master/MiU/Project2/Bronze/index.html" data-ajax="false"></a></p>
-						
-					</div><!--collap 2 closed-->
-					
-					<div data-role="collapsible" data-collapsed="true" data-theme="a"><!--collap 3 open-->
-					
-						<h3>Project One</h3>
-						<p>This is the link to my GitHub Project One since thanksgiving made things a little bit funky</p>
-						<p><a href="https://github.com/littlemeg27/Mobile-Development/tree/master/MiU/Project1" data-ajax="false"></a></p>
-						
-					</div><!--collap 3 closed-->
-					
-					
-				</div><!--Closed collap set-->
 
-			
-		</section><!--content closed-->
-			
-				<footer data-role="footer" data-id="theFooter" data-position="fixed" data-theme"b"><!--footer open-->
-				
-					<nav data-role="navbar" data-theme"b"><!--navbar open-->
-					
-						<ul>
-							<li><a href="#home" data-icon="home">Home</a></li>
-							<li><a href="#newsStream" data-icon="grid">News Stream</a></li>
-							<li><a href="#about" data-icon="info" class="ui-btn-active ui-state-persist">About</a></li>
-						</ul>
-					
-					</nav><!--navbar closed-->
-				
-		
-				</footer><!--footer closed-->
-		
-		</div><!--closed-->
-	<!--end about-->
-	
-	
-	
+
 	<!--Form-->
 		<div data-role="page" id="addItem" data-add-back-btn="true" data-theme="a"><!--page open-->
 		
@@ -277,7 +107,7 @@
 			
 		<section data-role="content"><!--content open-->
 			
-					<img style="float:left" src="images/lifeguardIcon.png" alt="LifeguardIcon">
+					<a href="#home"><img src="images/lifeguardIcon.png" alt="LifeguardIcon"></a>
 					
 					<form action="" id="lifeguardForm"><!--form open-->
 					
@@ -376,23 +206,7 @@
 							
 						</div><!--lifeguard date closed-->
 							
-						
-						<div data-role="fieldcontain"><!--hours open-->
-						
-							<label for="hours">How many hours can you work?</label>
-							<input type="range" name="hours" id="hours" value="20" min="5" max="40"/>
 							
-						</div><!--hours closed-->
-						
-						
-						<div data-role="fieldcontain"><!--requests open-->
-						
-							<label for="requests">Do you have any requests?</label>
-							<textarea></textarea>
-							
-						</div><!--requests closed-->
-						
-						
 						<div data-role="fieldcontain"><!--form buttons open-->
 							
 							<input type="submit" id="submit" value="Add Lifeguard"/>
@@ -408,17 +222,6 @@
 			</section><!--content closed-->
 		
 					<footer data-role="footer" data-id="theFooter" data-position="fixed" data-theme"b"><!--footer open-->
-					
-						<nav data-role="navbar" ><!--navbar open-->
-						
-							<ul>
-								<li><a href="#home" data-icon="home">Home</a></li>
-								<li><a href="#newsStream" data-icon="grid">News Stream</a></li>
-								<li><a href="#about" data-icon="info">About</a></li>
-							</ul>
-						
-						</nav> <!--navbar closed-->
-						
 				
 				    </footer> <!--footer closed-->
 		
@@ -460,155 +263,19 @@
 			
 		<section data-role="content"><!--content open-->
 			
-					<img style="float:left" src="images/lifeguardIcon.png" alt="LifeguardIcon">
+					<a href="#home"><img src="images/lifeguardIcon.png" alt="LifeguardIcon"></a>
 					
-					<h2>Pools</h2>
-						
-					<ul data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="Browse Pool Info...">
-							
-					<li data-role="list-divider">Browse Pools:</li>
-								
-								<li>
-								
-									<a href="#baxter">
-									<img src="images/b.png"/>
-									<h3>Baxter</h3>
-									</a>
-									
-								</li>
-								
-								<li>
-								
-									<a href="#boydHill" data-ajax="false">
-									<img src="images/b.png"/>
-									<h3>Boyd Hill</h3>
-									</a>
-									
-								</li>
-								
-								<li>
-								
-									<a href="#emmettScott" data-ajax="false">
-									<img src="images/e.png"/>
-									<h3>Emmett Scott</h3>
-									</a>
-									
-								</li>
-								
-								<li>
-								
-									<a href="#knightsbridge" data-ajax="false">
-									<img src="images/k.png"/>
-									<h3>Knightsbridge</h3>
-									</a>
-									
-								</li>
-								
-								<li>
-								
-									<a href="#laurelCreek" data-ajax="false">
-									<img src="images/l.png"/>
-									<h3>Laurel Creek</h3>
-									</a>
-									
-								</li>
-								
-								<li>
-								
-									<a href="#meadowsLakes1" data-ajax="false">
-									<img src="images/m.png"/>
-									<h3>Meadow Lakes 1</h3>
-									</a>
-									
-								</li>
-								
-								<li>
-								
-									<a href="#meadowLakes2" data-ajax="false">
-									<img src="images/m.png"/>
-									<h3>Meadow Lakes 2</h3>
-									</a>
-									
-								</li>
-								
-								<li>
-								
-									<a href="#nothside" data-ajax="false">
-									<img src="images/n.png"/>
-									<h3>Northside</h3>
-									</a>
-									
-								</li>
-								
-								<li>
-								
-									<a href="#oakwood" data-ajax="false">
-									<img src="images/o.png"/>
-									<h3>Oakwood</h3>
-									</a>
-									
-								</li>
-								
-								<li>
-								
-									<a href="#riverHillsCountryClub" data-ajax="false">
-									<img src="images/r.png"/>
-									<h3>River Hills Country Club</h3>
-									</a>
-									
-								</li>
-								
-								<li>
-								
-									<a href="#rockHillCountryClub" data-ajax="false">
-									<img src="images/r.png"/>
-									<h3>Rock Hill Country Club</h3>
-									</a>
-									
-								</li>
-								
-								<li>
-								
-									<a href="#rollingHills" data-ajax="false">
-									<img src="images/r.png"/>
-									<h3>Rolling Hills</h3>
-									</a>
-									
-								</li>
-								
-								<li>
-								
-									<a href="#shiland" data-ajax="false">
-									<img src="images/s.png"/>
-									<h3>Shiland</h3>
-									</a>
-									
-								</li>
-								
-					   	</ul><!--end of buttons-->
-			   	
-			   	
-		</section><!--closed-->
+					<h2>Pools</h2>		
+					
+				</section><!--closed-->
 		
 			<footer data-role="footer" data-id="theFooter" data-position="fixed" data-theme"b"><!--footer open-->
 				
-					<nav data-role="navbar" ><!--navbar open-->
-					
-						<ul>
-							<li><a href="#home" data-icon="home">Home</a></li>
-							<li><a href="#newsStream" data-icon="grid">News Stream</a></li>
-							<li><a href="#about" data-icon="info">About</a></li>
-						</ul>
-					
-					</nav> <!--navbar closed-->
-				
-		
 		    </footer> <!--footer closed-->
 		
 		</section><!--closed-->
 	<!--end Pools-->
 
-	
 	
 	
 	<!--Lifeguards-->
@@ -622,7 +289,7 @@
 			
 		<section data-role="content"><!--content open-->
 			
-					<img style="float:left" src="images/lifeguardIcon.png" alt="LifeguardIcon">
+					<a href="#home"><img src="images/lifeguardIcon.png" alt="LifeguardIcon"></a>
 					
 					<h2>Lifeguards</h2>
 					
@@ -689,17 +356,6 @@
 		</section><!--closed-->
 		
 			<footer data-role="footer" data-id="theFooter" data-position="fixed" data-theme"b"><!--footer open-->
-				
-					<nav data-role="navbar" ><!--navbar open-->
-					
-						<ul>
-							<li><a href="#home" data-icon="home">Home</a></li>
-							<li><a href="#newsStream" data-icon="grid">News Stream</a></li>
-							<li><a href="#about" data-icon="info">About</a></li>
-						</ul>
-					
-					</nav> <!--navbar closed-->
-				
 		
 		    </footer> <!--footer closed-->
 		
@@ -720,259 +376,21 @@
 			
 		<section data-role="content"><!--content open-->
 			
-					<img style="float:left" src="images/lifeguardIcon.png" alt="LifeguardIcon">
+					<a href="#home"><img src="images/lifeguardIcon.png" alt="LifeguardIcon"></a>
 							
 					<p>Schedules<p>
 			
 		</section><!--closed-->
 		
 			<footer data-role="footer" data-id="theFooter" data-position="fixed" data-theme"b"><!--footer open-->
-				
-					<nav data-role="navbar" ><!--navbar open-->
 					
-						<ul>
-							<li><a href="#home" data-icon="home">Home</a></li>
-							<li><a href="#newsStream" data-icon="grid">News Stream</a></li>
-							<li><a href="#about" data-icon="info">About</a></li>
-						</ul>
-					
-					</nav> <!--navbar closed-->
-				
-		
 		    </footer> <!--footer closed-->
 		
 		</section><!--closed-->
 	<!--end schedules-->
 
 
-	<!--Pool-->
-		<section data-role="page" id="pool" data-add-back-btn="true" data-theme="a"><!--page open-->
-		
-			<header data-role="header" data-position="fixed"><!--header open-->
-			
-				<h1>U.S.A. <br> Lifeguards</h1>
-			
-			</header><!--header closed-->
-			
-			
-		<section data-role="content"><!--content open-->
-					
-					<img style="float:left" src="images/lifeguardIcon.png" alt="LifeguardIcon">
-					
-					<h2>Pools</h2>
-			
-		</section><!--closed-->
-		
-			<footer data-role="footer" data-id="theFooter" data-position="fixed" data-theme"b"><!--footer open-->
-				
-				<nav data-role="navbar" ><!--navbar open-->
-				
-					<ul>
-						<li><a href="#home" data-icon="home">Home</a></li>
-						<li><a href="#newsStream" data-icon="grid">News Stream</a></li>
-						<li><a href="#about" data-icon="info">About</a></li>
-					</ul>
-				
-				</nav> <!--navbar closed-->
-				
-		
-		    </footer> <!--footer closed-->
-		
-		</section><!--closed-->
-	<!--end pool-->	
-	
-
-	
-	<!--Lifeguard Last Name-->
-		<section data-role="page"  id="lastName" data-add-back-btn="true" data-theme="a"><!--page open-->
-		
-			<header data-role="header" data-position="fixed"><!--header open-->
-			
-				<h1>U.S.A.<br>Lifeguards</h1>
-			
-			</header><!--header closed-->
-			
-		<section data-role="content"><!--content open-->
-			
-					<img style="float:left" src="images/lifeguardIcon.png" alt="LifeguardIcon">
-				
-					<p>Lifeguard Last Name<p>
-			
-		</section><!--closed-->
-			
-			<footer data-role="footer" data-id="theFooter" data-position="fixed" data-theme"b"><!--footer open-->
-				
-				<nav data-role="navbar" ><!--navbar open-->
-				
-					<ul>
-						<li><a href="#home" data-icon="home">Home</a></li>
-						<li><a href="#newsStream" data-icon="grid">News Stream</a></li>
-						<li><a href="#about" data-icon="info">About</a></li>
-					</ul>
-				
-				</nav> <!--navbar closed-->
-				
-		
-		    </footer> <!--footer closed-->
-		
-		</section><!--closed-->
-	<!--end Lifeguard Last Name-->
-	
-	
-			
-	<!--Phone Number-->
-		<section data-role="page" id="phoneNumber" data-add-back-btn="true">
-		
-			<header data-role="header" data-position="fixed">
-			
-				<h1>U.S.A.<br>Lifeguards</h1>
-			
-			</header><!--header closed-->
-			
-		 <section data-role="content"><!--content open-->
-			
-					<img style="float:left" src="images/lifeguardIcon.png" alt="LifeguardIcon">
-				
-					<p>Phone Number<p>
-					
-					<div class="lifeguards">	
-						<h2>Formatting Example</h2>
-						<p>Phone Number</p>
-					</div>
-			
-		</section><!--content closed-->
-			
-				<footer data-role="footer" data-id="theFooter" data-position="fixed" data-theme"b"><!--footer open-->
-				
-					<nav data-role="navbar" ><!--navbar open-->
-					
-						<ul>
-							<li><a href="#home" data-icon="home">Home</a></li>
-							<li><a href="#newsStream" data-icon="grid">News Stream</a></li>
-							<li><a href="#about" data-icon="info">About</a></li>
-						</ul>
-					
-					</nav> <!--navbar closed-->
-				
-				</footer> <!--footer closed-->
-		
-		</section><!--closed-->
-	<!--end Phone Number-->
-	
-	
-	
-	<!--CPR Certification Date-->
-		<section data-role="page" id="cprDate" data-add-back-btn="true" data-theme="a"><!--page open-->
-		
-			<header data-role="header" data-position="fixed"><!--header open-->
-			
-				<h1>U.S.A. <br> Lifeguards</h1>
-			
-			</header><!--header closed-->
-			
-		<section data-role="content"><!--content open-->
-			
-					<img style="float:left" src="images/lifeguardIcon.png" alt="LifeguardIcon">
-				
-					<p>CPR Certification Date<p>
-			
-			</section><!--closed-->
-			
-				<footer data-role="footer" data-id="theFooter" data-position="fixed" data-theme"b"><!--footer open-->
-					
-					<nav data-role="navbar" ><!--navbar open-->
-					
-						<ul>
-							<li><a href="#home" data-icon="home">Home</a></li>
-							<li><a href="#newsStream" data-icon="grid">News Stream</a></li>
-							<li><a href="#about" data-icon="info">About</a></li>
-						</ul>
-					
-					</nav> <!--navbar closed-->
-					
-			
-			    </footer> <!--footer closed-->
-		
-		    </section><!--closed-->
-	<!--end CPR Certification Date-->
-	
-	
-			
-	<!--First Aid Certification Date-->
-			<section data-role="page" id="firstAidDate" data-add-back-btn="true" data-theme="a"><!--page open-->
-		
-				<header data-role="header" data-position="fixed"><!--header open-->
-					
-						<h1>U.S.A.<br>Lifeguards</h1>
-					
-				</header><!--header closed-->
-			
-			<section data-role="content"><!--content open-->
-			
-					<img style="float:left" src="images/lifeguardIcon.png" alt="LifeguardIcon">
-				
-					<p>First Aid Certification Date<p>
-			
-			</section><!--content closed-->
-			
-				<footer data-role="footer" data-id="theFooter" data-position="fixed" data-theme"b"><!--footer open-->		
-						
-					<nav data-role="navbar" ><!--navbar open-->
-					
-						<ul>
-							<li><a href="#home" data-icon="home">Home</a></li>
-							<li><a href="#newsStream" data-icon="grid">News Stream</a></li>
-							<li><a href="#about" data-icon="info">About</a></li>
-						</ul>
-					
-					</nav> <!--navbar closed-->
-					
-			
-			    </footer> <!--footer closed-->
-		    
-		    </section><!--closed-->
-		
-	<!--end First Aid Certification Date-->
-	
-	
-			
-	<!--Lifeguard Certification Date-->
-		<section data-role="page" id="lifeguardDate" data-add-back-btn="true" data-theme"b"><!--page open-->
-		
-			<header data-role="header" data-position="fixed"><!--header open-->
-			
-				<h1>U.S.A.<br>Lifeguards</h1>
-			
-			</header><!--header closed-->
-			
-			<section data-role="content"><!--content open-->
-			
-					<img style="float:left" src="images/lifeguardIcon.png" alt="LifeguardIcon">
-				
-					<p>Lifeguard Certification Date<p>
-			
-			</section><!--content closed-->
-			
-				<footer data-role="footer" data-id="theFooter" data-position="fixed" data-theme"b"><!--footer open-->
-				
-						<nav data-role="navbar" ><!--navbar open-->
-						
-							<ul>
-								<li><a href="#home" data-icon="home">Home</a></li>
-								<li><a href="#newsStream" data-icon="grid">News Stream</a></li>
-								<li><a href="#about" data-icon="info">About</a></li>
-							</ul>
-						
-						</nav> <!--navbar closed-->
-				
-		
-		        </footer> <!--footer closed-->
-		
-		</section><!--closed-->
-		
-	<!--end Lifeguard Certification Date-->
-	
-	
+	              
 	<!--404 page-->
 		<section data-role="page" id="page404" data-add-back-btn="true" data-theme"b"><!--page open-->
 		
@@ -984,7 +402,7 @@
 			
 			<section data-role="content"><!--content open-->
 			
-					<img style="float:left" src="images/lifeguardIcon.png" alt="LifeguardIcon">
+					<a href="#home"><img src="images/lifeguardIcon.png" alt="LifeguardIcon"></a>
 				
 					<h1>404 Error!</h1>
 		
@@ -997,18 +415,7 @@
 			
 			</section><!--content closed-->
 			
-			<footer data-role="footer" data-id="theFooter" data-position="fixed" data-theme"b"><!--footer open-->		
-					
-					<nav data-role="navbar" ><!--navbar open-->
-					
-						<ul>
-							<li><a href="#home" data-icon="home">Home</a></li>
-							<li><a href="#newsStream" data-icon="grid">News Stream</a></li>
-							<li><a href="#about" data-icon="info">About</a></li>
-						</ul>
-					
-					</nav> <!--navbar closed-->
-				
+			<footer data-role="footer" data-id="theFooter" data-position="fixed" data-theme"b"><!--footer open-->			
 		
 		    </footer> <!--footer closed-->
 		    
