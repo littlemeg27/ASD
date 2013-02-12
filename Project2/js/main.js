@@ -2,7 +2,7 @@
 //ASD 1302
 //Project 3
 //02/10/2013
-var phoneNumber = 555-555-5555;
+
 
 	
 	$("#loadJSON").on('click', function()
