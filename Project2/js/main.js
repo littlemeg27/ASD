@@ -19,7 +19,7 @@
 			{    
 			console.log(This is my JSON Data, dataCall);    
 			
-				for(i=0, len=dataCall.lifeguards.length; i<len; i++)
+				for(i=0, len=dataCall.lifeguard.length; i<len; i++)
 				{
 					var guard = dataCall.lifeguard[i];
 					
