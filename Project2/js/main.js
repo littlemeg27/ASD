@@ -7,7 +7,7 @@
 	
 	$("#loadJSON").on('click', function() //when i click on this button something should fire
 	{
-	
+	console.log($("#loadJSON"));
 	
 		//$('#phoneNumber').empty();
 		$.ajax(
@@ -17,22 +17,24 @@
 			dataType : "json", //Getting JSON data, located in data.json   
 			success:function(dataCall) //Going to use dataCall for the name to call my data
 			{    
-			console.log(This is my JSON Data, dataCall);    
-			
-				for(i=0, len=dataCall.lifeguard.length; i<len; i++)//for loop to read the whole json
-				{
-					var guard = dataCall.lifeguard[i];
-					console.log('Item is ', guard);
-					
-					$('' +
-						'<div class="lifeguards">'+
-							'<h3>' + guard.lastName[1] + guard.firstName[1] + '</h3>'+
-							'<p>' + guard.phoneNumber[1] + '</p>'+
-						'</div>'
-					 ).appendTo("#lifeguards")
-				}
+			console.log(This is my JSON Data, dataCall); 
+				   
+						console.log(dataCall.lifeguardInfo.length);
+						for(i=0, len=dataCall.lifeguardInfo.length; i<len; i++)//for loop to read the whole json
+						{
+							console.log(dataCall.lifeguardInfo.length);
+							var guard = dataCall.lifeguardInfo[i];
+							console.log('Item is ', guard);
+							
+							$('' +
+								'<div class="lifeguards">'+
+									'<h3>' + guard.lastName[1] + guard.firstName[1] + '</h3>'+
+									'<p>' + guard.phoneNumber[1] + '</p>'+
+								'</div>'
+							 ).appendTo("#lifeguard");
+						}console.log(dataCall.lifeguardInfo.length);
 			}
-		});
+	   });
 
 	}
 	
