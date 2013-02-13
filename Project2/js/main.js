@@ -5,28 +5,29 @@
 
 
 	
-	$("#loadJSON").on('click', function()
+	$("#loadJSON").on('click', function() //when i click on this button something should fire
 	{
 	
 	
 		//$('#phoneNumber').empty();
 		$.ajax(
 		{    
-			url: "data.json", 
-			type: "GET", 
+			url: "xhr/data.json", //What i am getting
+			type: "GET", //I am getting not posting 
 			dataType : "json", //Getting JSON data, located in data.json   
 			success:function(dataCall) //Going to use dataCall for the name to call my data
 			{    
 			console.log(This is my JSON Data, dataCall);    
 			
-				for(i=0, len=dataCall.lifeguard.length; i<len; i++)
+				for(i=0, len=dataCall.lifeguard.length; i<len; i++)//for loop to read the whole json
 				{
 					var guard = dataCall.lifeguard[i];
+					console.log('Item is ', guard);
 					
 					$('' +
 						'<div class="lifeguards">'+
-							'<h3>' + guard.lastName + guard.firstName + '</h3>'+
-							'<p>' + guard.phoneNumber + '</p>'+
+							'<h3>' + guard.lastName[1] + guard.firstName[1] + '</h3>'+
+							'<p>' + guard.phoneNumber[1] + '</p>'+
 						'</div>'
 					 ).appendTo("#lifeguards")
 				}

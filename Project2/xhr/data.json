@@ -1,6 +1,5 @@
-var json = 
-{
-"contact1":
+{	"lifeguard":[
+
       {
       "firstName":			["First Name:", "Brenna"],
       "lastName": 			["Last Name:", "Pavlinchak"],
@@ -10,9 +9,7 @@ var json =
       "lifeguardDate":		["Lifeguard Certification Date:", "2011-06-25"],
       "pools":				["What is your pool?", "Emmett Scott"],
       "jobValue":			["Job:", "Lifeguard"], 
-       },
-    
-"contact2":
+      },
       {
       "firstName":			["First Name:", "Kenya"],
       "lastName": 			["Last Name:", "Columbia"],
@@ -23,8 +20,6 @@ var json =
       "pools":				["What is your pool?", "Knightsbridge"],
       "jobValue":			["Job:", "Pool Attendant"], 
       },
-     
-"contact3":
       {
       "firstName":			["First Name:", "Ted"],
       "lastName": 			["Last Name:", "Driskill"],
@@ -35,8 +30,6 @@ var json =
       "pools":				["What is your pool?", "Rock Hill Country Club"],
       "jobValue":			["Job:", "Lifeguard"], 
       },
-      
-"contact4":
       {	
       "firstName":			["First Name:", "Julianne"],
       "lastName": 			["Last Name:", "Depaolo"],
@@ -47,8 +40,6 @@ var json =
       "pools":				["What is your pool?", "Laurel Creek"],
       "jobValue":			["Job:", "Lifeguard"], 
       },
-      
-"contact5":
       {
       "firstName":			["First Name:", "Hugh"],
       "lastName": 			["Last Name:", "Falkner"],
@@ -60,8 +51,6 @@ var json =
       "pools":				["What is your pool?", "Rolling Hills"],
       "jobValue":			["Job:", "Lifeguard"], 
       },
-
-"contact6":
       {
       "firstName":			["First Name:", "Christian"],
       "lastName": 			["Last Name:", "Dooling"],
@@ -72,8 +61,6 @@ var json =
       "pools":				["What is your pool?", "Shiland"],
       "jobValue":			["Job:", "Lifeguard"], 
       },
-
-"contact7":
       {
       "firstName":			["First Name:", "Hugh"],
       "lastName": 			["Last Name:", "Fail"],
@@ -83,10 +70,7 @@ var json =
       "lifeguardDate":		["Lifeguard Certification Date:", "2011-06-25"],
       "pools":				["What is your pool?", "River Hills Country Club"],
       "jobValue":			["Job:", "Lifeguard"], 
-
       },
-
-"contact8":
       {
       "firstName":			["First Name:", "Fernando"],
       "lastName": 			["Last Name:", "Binder"],
@@ -97,8 +81,6 @@ var json =
       "pools":				["What is your pool?", "Baxter"],
       "jobValue":			["Job:", "Pool Attendant"], 
       },
-
-"contact9":
       {
       "firstName":			["First Name:", "Saundra"],
       "lastName": 			["Last Name:", "Woolum"],
@@ -109,8 +91,6 @@ var json =
       "pools":				["What is your pool?", "Emmett Scott"],
       "jobValue":			["Job:", "Pool Attendant"], 
       },
-
-"contact10":
       {
       "firstName":			["First Name:", "Fred"],
       "lastName": 			["Last Name:", "Garrity"],
@@ -121,8 +101,6 @@ var json =
       "pools":				["What is your pool?", "Oakwood"],
       "jobValue":			["Job:", "Pool Attendant"], 
       },
-
-"contact11":
       {
       "firstName":			["First Name:", "William"],
       "lastName": 			["Last Name:", "Stoner"],
@@ -133,8 +111,6 @@ var json =
       "pools":				["What is your pool?", "Northside"],
       "jobValue":			["Job:", "Lifeguard"], 
       },
-
-"contact12":
       {
       "firstName":			["First Name:", "Melissa"],
       "lastName": 			["Last Name:", "Milliner"],
@@ -145,9 +121,6 @@ var json =
       "pools":				["What is your pool?", "Meadow Lakes 1"],
       "jobValue":			["Job:", "Pool Attendant"], 
       },
-
-
-"contact13":
       {
       "firstName":			["First Name:", "Lance"],
       "lastName": 			["Last Name:", "Fanning"],
@@ -158,8 +131,6 @@ var json =
       "pools":				["What is your pool?", "Meadow Lakes 2"],
       "jobValue":			["Job:", "Lifeguard"], 
       },
-
-"contact14":
       {
       "firstName":			["First Name:", "Sharron"],
       "lastName": 			["Last Name:", "Knight"],
@@ -170,8 +141,6 @@ var json =
       "pools":				["What is your pool?", "Boyd Hill"],
       "jobValue":			["Job:", "Lifeguard"], 
       },
-
-"contact15":
       {
       "firstName":			["First Name:", "Sharron"],
       "lastName": 			["Last Name:", "Goto"],
@@ -185,8 +154,6 @@ var json =
       "slide":				["How many hours can you work a week?:", "36"],
       "comments":			["Comments:", "I will take as many hours as you can give me"]
       },
-
-"contact16":
       {
       "firstName":			["First Name:", "Lance"],
       "lastName": 			["Last Name:", "Horace"],
@@ -197,8 +164,6 @@ var json =
       "pools":				["What is your pool?", "Meadow Lakes 1"],
       "jobValue":			["Job:", "Lifeguard"], 
       },
-      
-"contact17":
       {
       "firstName":			["First Name:", "Kathrine"],
       "lastName": 			["Last Name:", "Barcus"],
@@ -208,10 +173,7 @@ var json =
       "lifeguardDate":		["Lifeguard Certification Date:", "2011-12-10"],
       "pools":				["What is your pool?", "Laurel Creek"],
       "jobValue":			["Job:", "Lifeguard"], 
-
       },
-
-"contact18":
       {
       "firstName":			["First Name:", "Danny"],
       "lastName": 			["Last Name:", "Chung"],
@@ -222,8 +184,6 @@ var json =
       "pools":				["What is your pool?", "Knightsbridge"],
       "jobValue":			["Job:", "Lifeguard"], 
       },
-
-"contact19":
       {
       "firstName":			["First Name:", "Tyrone"],
       "lastName": 			["Last Name:", "Boner"],
@@ -234,8 +194,6 @@ var json =
       "pools":				["What is your pool?", "Meadow Lakes 2"],
       "jobValue":			["Job:", "Lifeguard"], 
       },
-      
-"contact20":
       {
       "firstName":			["First Name:", "Clinton"],
       "lastName": 			["Last Name:", "Doshier"],
@@ -246,8 +204,5 @@ var json =
       "pools":				["What is your pool?", "River Hills Country Club"],
       "jobValue":			["Job:", "Lifeguard"], 
       },
-
-
-
-
-};
+      
+]}
