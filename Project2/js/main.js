@@ -17,10 +17,10 @@
 			dataType : "json", //Getting JSON data, located in data.json   
 			success:function(dataCall) //Going to use dataCall for the name to call my data
 			{    
-			console.log(This is my JSON Data, dataCall); 
+			console.log("This is my JSON Data", dataCall); 
 				   
 						console.log(dataCall.lifeguardInfo.length);
-						for(i=0, len=dataCall.lifeguardInfo.length; i<len; i++)//for loop to read the whole json
+						for(var i=0, len=dataCall.lifeguardInfo.length; i<len; i++)//for loop to read the whole json
 						{
 							console.log(dataCall.lifeguardInfo.length);
 							var guard = dataCall.lifeguardInfo[i];
