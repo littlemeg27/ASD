@@ -1,69 +1,8 @@
 //Brenna Pavlinchak
 //ASD 1302
-//Project 3
+//Project 2
 //02/10/2013
-
-
 	
-	$("#loadJSON").on('click', function() //when i click on this button something should fire
-	{
-	console.log($("#loadJSON"));
-	
-		//$('#phoneNumber').empty();
-		$.ajax(
-		{    
-			url: "xhr/data.json", //What i am getting
-			type: "GET", //I am getting not posting 
-			dataType : "json", //Getting JSON data, located in data.json   
-			success:function(dataCall) //Going to use dataCall for the name to call my data
-			{    
-			console.log("This is my JSON Data", dataCall); 
-				   
-						console.log(dataCall.lifeguardInfo.length);
-						for(var i=0, len=dataCall.lifeguardInfo.length; i<len; i++)//for loop to read the whole json
-						{
-							console.log(dataCall.lifeguardInfo.length);
-							var guard = dataCall.lifeguardInfo[i];
-							console.log('Item is ', guard);
-							
-							$('' +
-								'<div class="lifeguards">'+
-									'<h3>' + guard.lastName[1] + guard.firstName[1] + '</h3>'+
-									'<p>' + guard.phoneNumber[1] + '</p>'+
-								'</div>'
-							 ).appendTo("#lifeguard");
-						}console.log(dataCall.lifeguardInfo.length);
-			}
-	   });
-
-	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-			
-		
-		
-		
-		
-		
-		
-		
-		
-		
-
-		//Start of Refactored CRUD for JQM javascript
 		
 		$('#home').on('pageinit', function()
 		{
@@ -79,7 +18,7 @@
 		myForm.validate(
 		{
 				    
-					invalidHandler: function(form, validator) //Form validator 
+					invalidHandler: function(form, validator) 
 					{
 						errorFormLink.click();
 						var html = '';
@@ -101,10 +40,50 @@
 						storeData(data);
 					}
 		});
-	
 				
+			
+			//any other code needed for addItem page goes here
+			
+			$("#displayData").click(function() 
+			{
+			getData();
+			});
+			
+			$("#clearData").click(function() 
+			{
+			clearLocal();
+			});
+			
+		});
 		
-		var storeData = function(data)//Store data (refactored code)
+				
+		var autofillData = function ()
+		{
+			//old code for reference
+			 for(var n in json)
+               {
+                   var id = Math.floor(Math.random()*100000001);
+                   localStorage.setItem(id, JSON.stringify(json[n]));
+                   
+               }//end of old code
+               
+               var id
+               
+               for(var n in json)
+               {
+                  id = Math.floor(Math.random()*100000001);
+                  localStorage.setItem(id, JSON.stringify(json[n]));
+                   
+               }
+               
+		};
+		
+		var getData = function()
+		{
+		
+		};
+		
+		var storeData = function(data)
 		{
 			var key;
 			var id;
@@ -138,4 +117,72 @@
                 
 		}; //End of saveData
 		
+		var	deleteItem = function ()
+		{
+			
+			                
+                	
+		};//End of deleteItem Function
+							
+		var clearLocal = function()
+		{
+			 
+			if(localStorage.length === 0)
+            {
+                alert("There are no lifeguards clear!");
+    
+            }
+                else
+                {
+                    localStorage.clear();
+                    alert("All Lifeguards Have Been Deleted!");
+                    window.location.reload();
+                    return false;
+                }
+		};//end clear local
 		
+		
+		$('#lifeguards').on('pageinit', function()
+		{
+			//code needed for home page goes here
+			
+
+		
+		
+		
+				$("#loadJSON").on('click', function()) //when i click on this button something should fire
+				{
+				console.log($("#loadJSON"));
+				
+					//$('#phoneNumber').empty();
+					$.ajax(
+					{    
+						url: "xhr/data.json", //What i am getting
+						type: "GET", //I am getting not posting 
+						dataType : "json", //Getting JSON data, located in data.json   
+						success:function(result) //Going to use dataCall for the name to call my data
+						{    
+						console.log("This is my JSON Data", result); 
+							   
+									console.log(result.lifeguardInfo.length);
+									for(var i=0, len=dataCall.lifeguardInfo.length; i<len; i++)//for loop to read the whole json
+									{
+										console.log(dataCall.lifeguardInfo.length);
+										var guard = dataCall.lifeguardInfo[i];
+										console.log('Item is ', guard);
+										
+										$('' +
+											'<div class="lifeguards">'+
+												'<h3>' + guard.lastName[1] + guard.firstName[1] + '</h3>'+
+												'<p>' + guard.phoneNumber[1] + '</p>'+
+											'</div>'
+										 ).appendTo("#lifeguard");
+									}
+						}
+				   
+				   });
+			
+				}
+				
+				
+			});
