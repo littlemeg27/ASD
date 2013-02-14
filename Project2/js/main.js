@@ -144,17 +144,12 @@
         
         $('#lifeguards').on('pageinit', function()
         {
-            //code needed for home page goes here
-            
-
-        
-        
-        
-                $("#loadJSON").on('click', function() //when i click on this button something should fire
+           
+               $("#loadJSON").on('click', function() //when i click on this button something should fire
                 {
                 console.log($("#loadJSON"));
                 
-	                    //$('#phoneNumber').empty();
+	                    $('#phoneNumber').empty();
 	                    $.ajax(
 	                    {    
 		                        url: "xhr/data.json", //What i am getting
@@ -165,20 +160,20 @@
 		                            
 		                       		 console.log("This is my JSON Data", result); 
 		                               
-		                                    console.log(result.lifeguardInfo.length);
+		                                    
 		                                    for(var i=0, len=result.lifeguardInfo.length; i<len; i++)//for loop to read the whole json
 		                                    {
-		                                        console.log(result.lifeguardInfo.length);
 		                                        var guard = result.lifeguardInfo[i];
-		                                        console.log('Item is ', guard);
+		                                       
 		                                        
 		                                        $('' +
-		                                            '<div class="lifeguards">'+
+		                                            '<div class="lifeguard">'+
 		                                                '<h3>' + guard.lastName[1] + guard.firstName[1] + '</h3>'+
 		                                                '<p>' + guard.phoneNumber[1] + '</p>'+
 		                                            '</div>'
 		                                         ).appendTo("#lifeguard");
 		                                    }
+		                        
 		                        }
 	                   
 	                   });
@@ -186,4 +181,4 @@
                 });
                 
                 
-            });
+          });

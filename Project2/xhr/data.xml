@@ -1,0 +1,227 @@
+<lifeguardInfo>
+
+		<item>
+			<firstName>Brenna</firstName>
+			<lastName>Pavlinchak</lastName>
+			<phoneNumber>803-412-7815</phoneNumber>
+			<cprDate>2011-05-31</cprDate>
+			<firstAidDate>2011-06-25</firstAidDate>
+			<lifeguardDate>2011-06-25</lifeguardDate>
+			<pools>Emmett Scott</pools>
+			<jobValue>Lifeguard</jobValue>
+		</item>
+		
+		<item>
+			<firstName>Kenya</firstName>
+			<lastName>Columbia</lastName>
+			<phoneNumber>899-677-0618</phoneNumber>
+			<cprDate>2012-05-31</cprDate>
+			<firstAidDate>2010-04-07</firstAidDate>
+			<lifeguardDate>2010-04-07</lifeguardDate>
+			<pools>Knightsbridge</pools>
+			<jobValue>Pool Attendent</jobValue>
+		</item>
+		
+		<item>
+			<firstName>Ted</firstName>
+			<lastName>Driskill</lastName>
+			<phoneNumber>803-412-7815</phoneNumber>
+			<cprDate>2011-05-31</cprDate>
+			<firstAidDate>2010-04-07</firstAidDate>
+			<lifeguardDate>2010-04-07</lifeguardDate>
+			<pools>Rock Hill Country Club</pools>
+			<jobValue>Lifeguard</jobValue>
+		</item>
+		
+		<item>
+			<firstName>Julianne</firstName>
+			<lastName>Depaolo</lastName>
+			<phoneNumber>803-412-7815</phoneNumber>
+			<cprDate>2011-05-31</cprDate>
+			<firstAidDate>2011-06-25</firstAidDate>
+			<lifeguardDate>2011-06-25</lifeguardDate>
+			<pools>Laurel Creek</pools>
+			<jobValue>Lifeguard</jobValue>
+		</item>
+		
+		<item>
+			<firstName>Hugh</firstName>
+			<lastName>Falkner</lastName>
+			<phoneNumber>803-412-7815</phoneNumber>
+			<cprDate>2011-05-31</cprDate>
+			<firstAidDate>2011-06-25</firstAidDate>
+			<lifeguardDate>2011-06-25</lifeguardDate>
+			<pools>Rolling Hills</pools>
+			<jobValue>Lifeguard</jobValue>
+		</item>
+			
+		<item>
+			<firstName>Christian</firstName>
+			<lastName>Dooling</lastName>
+			<phoneNumber>803-412-7815</phoneNumber>
+			<cprDate>2011-05-31</cprDate>
+			<firstAidDate>2011-06-25</firstAidDate>
+			<lifeguardDate>2011-06-25</lifeguardDate>
+			<pools>Shiland</pools>
+			<jobValue>Lifeguard</jobValue>
+		</item>
+			
+		<item>
+			<firstName>Hugh</firstName>
+			<lastName>Fail</lastName>
+			<phoneNumber>803-412-7815</phoneNumber>
+			<cprDate>2011-05-31</cprDate>
+			<firstAidDate>2011-06-25</firstAidDate>
+			<lifeguardDate>2011-06-25</lifeguardDate>
+			<pools>River Hill Country Club</pools>
+			<jobValue>Lifeguard</jobValue>
+		</item>
+			
+		<item>
+			<firstName>Fernando</firstName>
+			<lastName>Binder</lastName>
+			<phoneNumber>803-412-7815</phoneNumber>
+			<cprDate>2011-05-31</cprDate>
+			<firstAidDate>2011-06-25</firstAidDate>
+			<lifeguardDate>2011-06-25</lifeguardDate>
+			<pools>Baxter</pools>
+			<jobValue>Pool Attendent</jobValue>
+		</item>
+			
+		<item>
+			<firstName>Sandra</firstName>
+			<lastName>Woolum</lastName>
+			<phoneNumber>803-412-7815</phoneNumber>
+			<cprDate>2011-05-31</cprDate>
+			<firstAidDate>2011-06-25</firstAidDate>
+			<lifeguardDate>2011-06-25</lifeguardDate>
+			<pools>Emmett Scott</pools>
+			<jobValue>Lifeguard</jobValue>
+		</item>
+			
+		<item>
+			<firstName>Fred</firstName>
+			<lastName>Garrity</lastName>
+			<phoneNumber>803-412-7815</phoneNumber>
+			<cprDate>2011-05-31</cprDate>
+			<firstAidDate>2011-06-25</firstAidDate>
+			<lifeguardDate>2011-06-25</lifeguardDate>
+			<pools>Oakwood</pools>
+			<jobValue>Pool Attendent</jobValue>
+		</item>
+			
+		<item>
+			<firstName>William</firstName>
+			<lastName>Stoner</lastName>
+			<phoneNumber>803-412-7815</phoneNumber>
+			<cprDate>2011-05-31</cprDate>
+			<firstAidDate>2011-06-25</firstAidDate>
+			<lifeguardDate>2011-06-25</lifeguardDate>
+			<pools>Northside</pools>
+			<jobValue>Lifeguard</jobValue>
+		</item>
+			
+		<item>
+			<firstName>Melissa</firstName>
+			<lastName>Milliner</lastName>
+			<phoneNumber>803-412-7815</phoneNumber>
+			<cprDate>2011-05-31</cprDate>
+			<firstAidDate>2011-06-25</firstAidDate>
+			<lifeguardDate>2011-06-25</lifeguardDate>
+			<pools>Meadow Lakes 1</pools>
+			<jobValue>Pool Attendent</jobValue>
+		</item>
+			
+		<item>
+			<firstName>Lance</firstName>
+			<lastName>Fanning</lastName>
+			<phoneNumber>803-412-7815</phoneNumber>
+			<cprDate>2011-05-31</cprDate>
+			<firstAidDate>2011-06-25</firstAidDate>
+			<lifeguardDate>2011-06-25</lifeguardDate>
+			<pools>Meadow Lakes 2</pools>
+			<jobValue>Lifeguard</jobValue>
+		</item>
+			
+		<item>
+			<firstName>Sharron</firstName>
+			<lastName>Knight</lastName>
+			<phoneNumber>803-412-7815</phoneNumber>
+			<cprDate>2011-05-31</cprDate>
+			<firstAidDate>2011-06-25</firstAidDate>
+			<lifeguardDate>2011-06-25</lifeguardDate>
+			<pools>Boyd Hill</pools>
+			<jobValue>Lifeguard</jobValue>
+		</item>
+			
+		<item>
+			<firstName>Sharron</firstName>
+			<lastName>Goto</lastName>
+			<phoneNumber>803-412-7815</phoneNumber>
+			<cprDate>2011-05-31</cprDate>
+			<firstAidDate>2011-06-25</firstAidDate>
+			<lifeguardDate>2011-06-25</lifeguardDate>
+			<pools>Northside</pools>
+			<jobValue>Lifeguard</jobValue>
+		</item>
+			
+		<item>
+			<firstName>Lance</firstName>
+			<lastName>Horace</lastName>
+			<phoneNumber>803-412-7815</phoneNumber>
+			<cprDate>2011-05-31</cprDate>
+			<firstAidDate>2011-06-25</firstAidDate>
+			<lifeguardDate>2011-06-25</lifeguardDate>
+			<pools>Meadow Lakes 1</pools>
+			<jobValue>Lifeguard</jobValue>
+		</item>
+
+		<item>
+			<firstName>Katherine</firstName>
+			<lastName>Barcus</lastName>
+			<phoneNumber>803-412-7815</phoneNumber>
+			<cprDate>2011-05-31</cprDate>
+			<firstAidDate>2011-06-25</firstAidDate>
+			<lifeguardDate>2011-06-25</lifeguardDate>
+			<pools>Laurel Creek</pools>
+			<jobValue>Lifeguard</jobValue>
+		</item>
+			
+		<item>
+			<firstName>Danny</firstName>
+			<lastName>Chung</lastName>
+			<phoneNumber>803-412-7815</phoneNumber>
+			<cprDate>2011-05-31</cprDate>
+			<firstAidDate>2011-06-25</firstAidDate>
+			<lifeguardDate>2011-06-25</lifeguardDate>
+			<pools>Knightsbridge</pools>
+			<jobValue>Lifeguard</jobValue>
+		</item>
+			
+		<item>
+			<firstName>Tyrone</firstName>
+			<lastName>Boner</lastName>
+			<phoneNumber>803-412-7815</phoneNumber>
+			<cprDate>2011-05-31</cprDate>
+			<firstAidDate>2011-06-25</firstAidDate>
+			<lifeguardDate>2011-06-25</lifeguardDate>
+			<pools>Meadow Lakes 2</pools>
+			<jobValue>Lifeguard</jobValue>
+		</item>
+			
+		<item>
+			<firstName>Clinton</firstName>
+			<lastName>Doshier</lastName>
+			<phoneNumber>803-412-7815</phoneNumber>
+			<cprDate>2011-05-31</cprDate>
+			<firstAidDate>2011-06-25</firstAidDate>
+			<lifeguardDate>2011-06-25</lifeguardDate>
+			<pools>River Hills Country Club</pools>
+			<jobValue>Lifeguard</jobValue>
+		</item>
+		
+</lifeguardInfo>
+			
+			
+		
+		
