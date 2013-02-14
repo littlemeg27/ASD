@@ -65,7 +65,7 @@
                 
         var autofillData = function ()
         { 
-               var id
+               var id;
                
                for(var n in json)
                {
@@ -113,15 +113,15 @@
                 
               // getImage(obj.pools[1], makeSubList);//Calls the getImage function
                 
-				for(var n in obj)
-				{
-					var makeSubli = document.createElement('li');
-					makeSubList.appendChild(makeSubli);
-					var optSubText = obj[n][0]+" "+obj[n][1];
-					makeSubli.innerHTML = optSubText;
-					makeSubList.appendChild(linksLi);
-				}
-				
+                for(var n in obj)
+                {
+                    var makeSubli = document.createElement('li');
+                    makeSubList.appendChild(makeSubli);
+                    var optSubText = obj[n][0]+" "+obj[n][1];
+                    makeSubli.innerHTML = optSubText;
+                    makeSubList.appendChild(linksLi);
+                }
+                
                 makeLifeguardItemLinks(localStorage.key(i), linksLi); //create our edit delete buttons link
        
 
@@ -206,6 +206,8 @@
         
 /**********************************************This is my lifeguard page to pull in the JSON and XML********************************************************/        
         
+       
+       
         $('#lifeguards').on('pageinit', function()
         {
            
@@ -213,34 +215,34 @@
                 {
                 console.log($("#loadJSON"));
                 
-	                    $('#lifeguard').empty();
-	                    $.ajax(
-	                    {    
-		                        url: "xhr/data.json", //What i am getting
-		                        type: "GET", //I am getting not posting 
-		                        dataType : "json", //Getting JSON data, located in data.json   
-		                        success:function(result) //Going to use dataCall for the name to call my data
-		                        {
-		                            
-		                       		 console.log("This is my JSON Data", result); 
-		                               
-		                                    
-		                                    for(var i=0, len=result.lifeguardInfo.length; i<len; i++)//for loop to read the whole json
-		                                    {
-		                                        var guard = result.lifeguardInfo[i];
-		                                       
-		                                        
-		                                        $('' +
-		                                            '<div class="lifeguard">'+
-		                                                '<h3>' + guard.lastName[1] + guard.firstName[1] + '</h3>'+
-		                                                '<p>' + guard.phoneNumber[1] + '</p>'+
-		                                            '</div>'
-		                                         ).appendTo("#lifeguard");
-		                                    }
-		                        
-		                        }
-	                   
-	                   });
+                        $('#lifeguard').empty();
+                        $.ajax(
+                        {    
+                                url: "xhr/data.json", //What i am getting
+                                type: "GET", //I am getting not posting 
+                                dataType : "json", //Getting JSON data, located in data.json   
+                                success:function(result) //Going to use dataCall for the name to call my data
+                                {
+                                    
+                                        console.log("This is my JSON Data", result); 
+                                       
+                                            
+                                            for(var i=0, len=result.lifeguardInfo.length; i<len; i++)//for loop to read the whole json
+                                            {
+                                                var guard = result.lifeguardInfo[i];
+                                               
+                                                
+                                                $('' +
+                                                    '<div class="lifeguard">'+
+                                                        '<h3>' + guard.lastName[1] + guard.firstName[1] + '</h3>'+
+                                                        '<p>' + guard.phoneNumber[1] + '</p>'+
+                                                    '</div>'
+                                                 ).appendTo("#lifeguard");
+                                            }
+                                
+                                }
+                       
+                       });
             
                 });
                 
@@ -253,38 +255,38 @@
                 {
                 console.log($("#loadXML"));
                 
-	                    $('#lifeguard').empty();
-	                    $.ajax(
-	                    {    
-		                        url: "xhr/data.xml", //What i am getting
-		                        type: "GET", //I am getting not posting 
-		                        dataType : "xml", //Getting JSON data, located in data.json   
-		                        success:function(result) //Going to use dataCall for the name to call my data
-		                        {
-		                            
-		                       		 console.log("This is my XML Data", result); 
-		                               
-		                                    
-		                                   $(xml).find("item").each(function () 
-		                                   {
-		                                   		 var guardList 	 = $(this).find('item').text(),
-		                                   		 
-		                                   		 firstName=		$(this).find('firstName').text(),
-		                                   		 lastName=		$(this).find('lastName').text(),
-		                                   		 phoneNumber=		$(this).find('phoneNumber').text()
-		                                   		 
-		                                   		 
-		                                   		 $("#lifeguard").appendTo($(
-		                                   		 	'<div class="lifeguard">'+
-		                                                '<h3>' + guard.lastName + guard.firstName + '</h3>'+
-		                                                '<p>' + guard.phoneNumber + '</p>'+
-		                                            '</div>'
-		                                          ));		                                   
-		                                   });
-		                                   		                        
-		                        }
-	                   
-	                   });
+                        $('#lifeguard').empty();
+                        $.ajax(
+                        {    
+                                url: "xhr/data.xml", //What i am getting
+                                type: "GET", //I am getting not posting 
+                                dataType : "xml", //Getting JSON data, located in data.json   
+                                success:function(result) //Going to use dataCall for the name to call my data
+                                {
+                                    
+                                        console.log("This is my XML Data", result); 
+                                       
+                                            
+                                           $(xml).find("item").each(function () 
+                                           {
+                                                    var guardList      = $(this).find('item').text(),
+                                                    
+                                                    firstName=        $(this).find('firstName').text(),
+                                                    lastName=        $(this).find('lastName').text(),
+                                                    phoneNumber=        $(this).find('phoneNumber').text();
+                                                    
+                                                    
+                                                    $("#lifeguard").appendTo($(
+                                                        '<div class="lifeguard">'+
+                                                        '<h3>' + guard.lastName + guard.firstName + '</h3>'+
+                                                        '<p>' + guard.phoneNumber + '</p>'+
+                                                    '</div>'
+                                                  ));                                           
+                                           });
+                                                                           
+                                }
+                       
+                       });
             
                 });
                 
@@ -295,3 +297,9 @@
           
           
      
+
+
+
+
+
+
