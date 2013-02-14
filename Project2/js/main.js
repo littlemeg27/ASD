@@ -6,8 +6,12 @@
         
         $('#home').on('pageinit', function()
         {
-            //code needed for home page goes here
+            
         });    
+        
+        
+        
+ /*****************************************This is my form page for getting/deleting and editing information*************************************************/ 
                 
         $('#addItem').on('pageinit', function()
         {
@@ -15,7 +19,9 @@
                 var myForm = $('#lifeguardForm');
                 var errorFormLink = $('#errorFormLink');
                 
-        myForm.validate( //Validate done
+                
+                
+        myForm.validate( 
         {
                     
                     invalidHandler: function(form, validator) 
@@ -39,17 +45,17 @@
                         var data = myForm.serializeArray();
                         storeData(data);
                     }
-        });
+        }); //End of validate form
                 
             
             
             
-            $("#displayData").click(function() 
+            $("#displayData").on('click', function() 
             {
             getData();
             });
             
-            $("#clearData").click(function() 
+            $("#clearData").on('click', function() 
             {
             clearLocal();
             });
@@ -68,10 +74,60 @@
                }       
         }; //End of auto fill data
         
+        
+        
         var getData = function()
         {
         
         };
+        
+      /*  function getLifeguardData()
+        {
+            toggleControls("on");
+            
+            if(localStorage.length === 0)
+            {
+                alert("There are no Lifeguards saved! Load default data");
+                autoFillData(); //Calls the auto fill data function
+            }
+                
+                var makeDiv = document.createElement('div'); 
+                makeDiv.setAttribute("id", "items");
+                var makeList = document.createElement('ul');
+                makeDiv.appendChild(makeList);
+                document.body.appendChild(makeDiv);
+                getElement('items').style.display = "block";
+                
+            for(var i=0, len=localStorage.length; i<len; i++)
+            {
+                var makeli = document.createElement('li');
+                var linksLi = document.createElement('li'); 
+                
+                makeList.appendChild(makeli);
+                var key = localStorage.key(i);
+                var value = localStorage.getItem(key);
+                
+                var obj = JSON.parse(value); //Convert string from local storage value back to object using JSON.parse
+                var makeSubList = document.createElement('ul'); 
+                makeli.appendChild(makeSubList);
+                
+              // getImage(obj.pools[1], makeSubList);//Calls the getImage function
+                
+				for(var n in obj)
+				{
+					var makeSubli = document.createElement('li');
+					makeSubList.appendChild(makeSubli);
+					var optSubText = obj[n][0]+" "+obj[n][1];
+					makeSubli.innerHTML = optSubText;
+					makeSubList.appendChild(linksLi);
+				}
+				
+                makeLifeguardItemLinks(localStorage.key(i), linksLi); //create our edit delete buttons link
+       
+
+            }
+        } //End of function getLifeguardData */
+
         
         var storeData = function(data)
         {
@@ -107,12 +163,27 @@
                 
         }; //End of saveData
         
-        var    deleteItem = function ()
+        
+        
+        var    deleteItem = function(key)
         {
-            
-                            
-                    
+            var ask = confirm("Do you want to delete this Lifeguard contact?");
+                
+            if(ask)
+            {
+                localStorage.removeItem(key);
+                alert("Lifeguard contact was deleted!");
+                window.location.reload();
+            }
+                
+            else
+            {
+                alert("Lifeguard contact was not deleted");
+            }
+                        
         };//End of deleteItem Function
+        
+        
                             
         var clearLocal = function()
         {
@@ -129,8 +200,11 @@
                     window.location.reload();
                     return false;
                 }
-        };//end clear local
+        };//end clear local function
         
+        
+        
+/**********************************************This is my lifeguard page to pull in the JSON and XML********************************************************/        
         
         $('#lifeguards').on('pageinit', function()
         {
