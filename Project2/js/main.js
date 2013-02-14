@@ -149,7 +149,7 @@
                 {
                 console.log($("#loadJSON"));
                 
-	                    $('#phoneNumber').empty();
+	                    $('#lifeguard').empty();
 	                    $.ajax(
 	                    {    
 		                        url: "xhr/data.json", //What i am getting
@@ -181,4 +181,53 @@
                 });
                 
                 
-          });
+          
+          
+          
+          
+              $("#loadXML").on('click', function() //when i click on this button something should fire
+                {
+                console.log($("#loadXML"));
+                
+	                    $('#lifeguard').empty();
+	                    $.ajax(
+	                    {    
+		                        url: "xhr/data.xml", //What i am getting
+		                        type: "GET", //I am getting not posting 
+		                        dataType : "xml", //Getting JSON data, located in data.json   
+		                        success:function(result) //Going to use dataCall for the name to call my data
+		                        {
+		                            
+		                       		 console.log("This is my XML Data", result); 
+		                               
+		                                    
+		                                   $(xml).find("item").each(function () 
+		                                   {
+		                                   		 var guardList 	 = $(this).find('item').text(),
+		                                   		 
+		                                   		 guardList.firstName=		$(this).find('firstName').text(),
+		                                   		 guardList.lastName=		$(this).find('lastName').text(),
+		                                   		 guardList.phoneNumber=		$(this).find('phoneNumber').text(),
+		                                   		 
+		                                   		 
+		                                   		 $("#lifeguard").appendTo($(
+		                                   		 	'<div class="lifeguard">'+
+		                                                '<h3>' + guard.lastName + guard.firstName + '</h3>'+
+		                                                '<p>' + guard.phoneNumber + '</p>'+
+		                                            '</div>'
+		                                          ));		                                   
+		                                   });
+		                                   		                        
+		                        }
+	                   
+	                   });
+            
+                });
+                
+                
+           });//End of lifeguard page
+                
+
+          
+          
+     
