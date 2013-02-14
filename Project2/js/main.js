@@ -15,7 +15,7 @@
                 var myForm = $('#lifeguardForm');
                 var errorFormLink = $('#errorFormLink');
                 
-        myForm.validate(
+        myForm.validate( //Validate done
         {
                     
                     invalidHandler: function(form, validator) 
@@ -42,7 +42,7 @@
         });
                 
             
-            //any other code needed for addItem page goes here
+            
             
             $("#displayData").click(function() 
             {
@@ -58,25 +58,15 @@
         
                 
         var autofillData = function ()
-        {
-            //old code for reference
-         /*    for(var n in json)
-               {
-                   var id = Math.floor(Math.random()*100000001);
-                   localStorage.setItem(id, JSON.stringify(json[n]));
-                   
-               }//end of old code*/
-               
+        { 
                var id
                
                for(var n in json)
                {
                   id = Math.floor(Math.random()*100000001);
-                  localStorage.setItem(id, JSON.stringify(json[n]));
-                   
-               }
-               
-        };
+                  localStorage.setItem(id, JSON.stringify(json[n]));     
+               }       
+        }; //End of auto fill data
         
         var getData = function()
         {
@@ -205,9 +195,9 @@
 		                                   {
 		                                   		 var guardList 	 = $(this).find('item').text(),
 		                                   		 
-		                                   		 guardList.firstName=		$(this).find('firstName').text(),
-		                                   		 guardList.lastName=		$(this).find('lastName').text(),
-		                                   		 guardList.phoneNumber=		$(this).find('phoneNumber').text(),
+		                                   		 firstName=		$(this).find('firstName').text(),
+		                                   		 lastName=		$(this).find('lastName').text(),
+		                                   		 phoneNumber=		$(this).find('phoneNumber').text()
 		                                   		 
 		                                   		 
 		                                   		 $("#lifeguard").appendTo($(
