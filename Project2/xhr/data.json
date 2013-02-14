@@ -8,7 +8,6 @@
       "firstAidDate":		["First Aid Certification Date:", "2011-06-25"],
       "lifeguardDate":		["Lifeguard Certification Date:", "2011-06-25"],
       "pools":				["What is your pool?", "Emmett Scott"],
-      "jobValue":			["Job:", "Lifeguard"]
       },
       {
       "firstName":			["First Name:", "Kenya"],
@@ -18,7 +17,6 @@
       "firstAidDate":		["First Aid Certification Date:", "2010-04-07"],
       "lifeguardDate":		["Lifeguard Certification Date:", "2010-04-07"],
       "pools":				["What is your pool?", "Knightsbridge"],
-      "jobValue":			["Job:", "Pool Attendant"]
       },
       {
       "firstName":			["First Name:", "Ted"],
@@ -28,7 +26,6 @@
       "firstAidDate":		["First Aid Certification Date:", "2010-04-07"],
       "lifeguardDate":		["Lifeguard Certification Date:", "2010-04-07"],
       "pools":				["What is your pool?", "Rock Hill Country Club"],
-      "jobValue":			["Job:", "Lifeguard"]
       },
       {	
       "firstName":			["First Name:", "Julianne"],
@@ -38,7 +35,6 @@
       "firstAidDate":		["First Aid Certification Date:", "2010-04-07"],
       "lifeguardDate":		["Lifeguard Certification Date:", "2010-04-07"],
       "pools":				["What is your pool?", "Laurel Creek"],
-      "jobValue":			["Job:", "Lifeguard"]
       },
       {
       "firstName":			["First Name:", "Hugh"],
@@ -49,7 +45,6 @@
       "firstAidDate":		["First Aid Certification Date:", "2011-06-25"],
       "lifeguardDate":		["Lifeguard Certification Date:", "2011-06-25"],
       "pools":				["What is your pool?", "Rolling Hills"],
-      "jobValue":			["Job:", "Lifeguard"]
       },
       {
       "firstName":			["First Name:", "Christian"],
@@ -59,7 +54,6 @@
       "firstAidDate":		["First Aid Certification Date:", "2011-12-10"],
       "lifeguardDate":		["Lifeguard Certification Date:", "2011-12-10"],
       "pools":				["What is your pool?", "Shiland"],
-      "jobValue":			["Job:", "Lifeguard"]
       },
       {
       "firstName":			["First Name:", "Hugh"],
@@ -69,7 +63,6 @@
       "firstAidDate":		["First Aid Certification Date:", "2011-06-25"],
       "lifeguardDate":		["Lifeguard Certification Date:", "2011-06-25"],
       "pools":				["What is your pool?", "River Hills Country Club"],
-      "jobValue":			["Job:", "Lifeguard"]
       },
       {
       "firstName":			["First Name:", "Fernando"],
@@ -79,7 +72,6 @@
       "firstAidDate":		["First Aid Certification Date:", "2011-12-10"],
       "lifeguardDate":		["Lifeguard Certification Date:", "2011-12-10"],
       "pools":				["What is your pool?", "Baxter"],
-      "jobValue":			["Job:", "Pool Attendant"] 
       },
       {
       "firstName":			["First Name:", "Saundra"],
@@ -89,7 +81,6 @@
       "firstAidDate":		["First Aid Certification Date:", "2011-06-25"],
       "lifeguardDate":		["Lifeguard Certification Date:", "2011-06-25"],
       "pools":				["What is your pool?", "Emmett Scott"],
-      "jobValue":			["Job:", "Lifeguard"]
       },
       {
       "firstName":			["First Name:", "Fred"],
@@ -99,7 +90,6 @@
       "firstAidDate":		["First Aid Certification Date:", "2011-12-10"],
       "lifeguardDate":		["Lifeguard Certification Date:", "2011-12-10"],
       "pools":				["What is your pool?", "Oakwood"],
-      "jobValue":			["Job:", "Pool Attendant"]
       },
       {
       "firstName":			["First Name:", "William"],
@@ -109,7 +99,6 @@
       "firstAidDate":		["First Aid Certification Date:", "2011-12-10"],
       "lifeguardDate":		["Lifeguard Certification Date:", "2011-12-10"],
       "pools":				["What is your pool?", "Northside"],
-      "jobValue":			["Job:", "Lifeguard"]
       },
       {
       "firstName":			["First Name:", "Melissa"],
@@ -119,7 +108,6 @@
       "firstAidDate":		["First Aid Certification Date:", "2011-12-10"],
       "lifeguardDate":		["Lifeguard Certification Date:", "2011-12-10"],
       "pools":				["What is your pool?", "Meadow Lakes 1"],
-      "jobValue":			["Job:", "Pool Attendant"]
       },
       {
       "firstName":			["First Name:", "Lance"],
@@ -129,7 +117,6 @@
       "firstAidDate":		["First Aid Certification Date:", "2011-12-10"],
       "lifeguardDate":		["Lifeguard Certification Date:", "2011-12-10"],
       "pools":				["What is your pool?", "Meadow Lakes 2"],
-      "jobValue":			["Job:", "Lifeguard"]
       },
       {
       "firstName":			["First Name:", "Sharron"],
@@ -139,7 +126,6 @@
       "firstAidDate":		["First Aid Certification Date:", "2011-12-10"],
       "lifeguardDate":		["Lifeguard Certification Date:", "2011-12-10"],
       "pools":				["What is your pool?", "Boyd Hill"],
-      "jobValue":			["Job:", "Lifeguard"]
       },
       {
       "firstName":			["First Name:", "Sharron"],
@@ -150,7 +136,6 @@
       "firstAidDate":		["First Aid Certification Date:", "2011-12-10"],
       "lifeguardDate":		["Lifeguard Certification Date:", "2011-12-10"],
       "pools":				["What is your pool?", "Northside"],
-      "jobValue":			["Job:", "Lifeguard"]
       },
       {
       "firstName":			["First Name:", "Lance"],
@@ -160,7 +145,6 @@
       "firstAidDate":		["First Aid Certification Date:", "2011-12-10"],
       "lifeguardDate":		["Lifeguard Certification Date:", "2011-12-10"],
       "pools":				["What is your pool?", "Meadow Lakes 1"],
-      "jobValue":			["Job:", "Lifeguard"]
       },
       {
       "firstName":			["First Name:", "Kathrine"],
@@ -170,7 +154,6 @@
       "firstAidDate":		["First Aid Certification Date:", "2011-12-10"],
       "lifeguardDate":		["Lifeguard Certification Date:", "2011-12-10"],
       "pools":				["What is your pool?", "Laurel Creek"],
-      "jobValue":			["Job:", "Lifeguard"]
       },
       {
       "firstName":			["First Name:", "Danny"],
@@ -180,7 +163,6 @@
       "firstAidDate":		["First Aid Certification Date:", "2010-04-07"],
       "lifeguardDate":		["Lifeguard Certification Date:", "2010-04-07"],
       "pools":				["What is your pool?", "Knightsbridge"],
-      "jobValue":			["Job:", "Lifeguard"] 
       },
       {
       "firstName":			["First Name:", "Tyrone"],
@@ -190,7 +172,6 @@
       "firstAidDate":		["First Aid Certification Date:", "2010-04-07"],
       "lifeguardDate":		["Lifeguard Certification Date:", "2010-04-07"],
       "pools":				["What is your pool?", "Meadow Lakes 2"],
-      "jobValue":			["Job:", "Lifeguard"]
       },
       {
       "firstName":			["First Name:", "Clinton"],
@@ -200,7 +181,6 @@
       "firstAidDate":		["First Aid Certification Date:", "2010-04-07"],
       "lifeguardDate":		["Lifeguard Certification Date:", "2010-04-07"],
       "pools":				["What is your pool?", "River Hills Country Club"],
-      "jobValue":			["Job:", "Lifeguard"]
       }
       
 ]}

@@ -20,7 +20,7 @@
                 var errorFormLink = $('#errorFormLink');
                 
                 
-                
+/*********************************************************Start of validate Function*************************************************************************/                
         myForm.validate( 
         {
                     
@@ -61,8 +61,12 @@
             });
             
         });
+/*********************************************************End of validate Function**************************************************************************/        
         
-                
+        
+        
+        
+/*********************************************************Start of autoFillData Function*********************************************************************/                
         var autofillData = function ()
         { 
                var id;
@@ -73,62 +77,47 @@
                   localStorage.setItem(id, JSON.stringify(json[n]));     
                }       
         }; //End of auto fill data
+/*********************************************************End of autoFillData Function***********************************************************************/
+
+
         
         
-        
+/*********************************************************Start of getData Function**************************************************************************/       
         var getData = function()
         {
+           $('#lifeguard').empty();
+           $.ajax(
+           {    
+	             url: "xhr/data.json", //What i am getting
+	             type: "GET", //I am getting not posting 
+	             dataType : "json", //Getting JSON data, located in data.json   
+	             success:function(result) //Going to use dataCall for the name to call my data
+	             {
+			                for(var i=0, len=result.lifeguardInfo.length; i<len; i++)//for loop to read the whole json
+			                {
+			                  var guard = result.lifeguardInfo[i];
+			                  $('' +
+			                    '<div class="lifeguard">'+
+			                    '<h3>' + guard.lastName[1] + guard.firstName[1] + '</h3>'+
+			                    '<p>' + guard.phoneNumber[1] + '</p>'+
+			                    '<p>' + guard.cprDate[1] + '</p>'+
+			                    '<p>' + guard.firstAidDate[1] + '</p>'+
+			                    '<p>' + guard.lifeguardDate[1] + '</p>'+
+			                    '<p>' + guard.pools[1] + '</p>'+
+			                    '</div>'
+			                    ).appendTo("#lifeguard");
+			                }
+	                                
+	             }
+     
+	       };
+/*********************************************************End of getData Function**************************************************************************/       
         
-        };
         
-      /*  function getLifeguardData()
-        {
-            toggleControls("on");
-            
-            if(localStorage.length === 0)
-            {
-                alert("There are no Lifeguards saved! Load default data");
-                autoFillData(); //Calls the auto fill data function
-            }
-                
-                var makeDiv = document.createElement('div'); 
-                makeDiv.setAttribute("id", "items");
-                var makeList = document.createElement('ul');
-                makeDiv.appendChild(makeList);
-                document.body.appendChild(makeDiv);
-                getElement('items').style.display = "block";
-                
-            for(var i=0, len=localStorage.length; i<len; i++)
-            {
-                var makeli = document.createElement('li');
-                var linksLi = document.createElement('li'); 
-                
-                makeList.appendChild(makeli);
-                var key = localStorage.key(i);
-                var value = localStorage.getItem(key);
-                
-                var obj = JSON.parse(value); //Convert string from local storage value back to object using JSON.parse
-                var makeSubList = document.createElement('ul'); 
-                makeli.appendChild(makeSubList);
-                
-              // getImage(obj.pools[1], makeSubList);//Calls the getImage function
-                
-                for(var n in obj)
-                {
-                    var makeSubli = document.createElement('li');
-                    makeSubList.appendChild(makeSubli);
-                    var optSubText = obj[n][0]+" "+obj[n][1];
-                    makeSubli.innerHTML = optSubText;
-                    makeSubList.appendChild(linksLi);
-                }
-                
-                makeLifeguardItemLinks(localStorage.key(i), linksLi); //create our edit delete buttons link
-       
+        
+        
 
-            }
-        } //End of function getLifeguardData */
-
-        
+/********************************************************Start of storeData Function*************************************************************************/        
         var storeData = function(data)
         {
             var key;
@@ -149,22 +138,23 @@
                 item.firstName        =["First Name:", $("#firstName").val()];
                 item.lastName         =["Last Name:", $("#lastName").val()];
                 item.phoneNumber      =["Phone Number:", $("#phoneNumber").val()];
-                item.email            =["Email:", $("#email").val()];
                 item.pools            =["Pools:", $("#pools").val()];    
                 item.job              =["Job:", $("input:radio[name=job]:checked").val()];
                 item.cprDate          =["Date of CPR certification:", $("#cprDate").val()];
                 item.firstAidDate     =["Date of First Aid certification:", $("#firstAidDate").val()];
                 item.lifeguardDate    =["Date of Lifeguard certification:", $("#lifeguardDate").val()];
-                item.hours            =["Hours a week you can work:", $("#hours").val()];
-                item.requests         =["Requests:", $("#requests").val()];
-                
+                                
                 localStorage.setItem(id, JSON.stringify(item)); //Save data in not local storage: Use Stringify to convert our object to a string.
                 alert("Lifeguard Saved!");
                 
-        }; //End of saveData
+        };
+/*********************************************************End of saveData Function**************************************************************************/
         
         
         
+        
+        
+/*********************************************************Start of deleteItem Function***********************************************************************/        
         var    deleteItem = function(key)
         {
             var ask = confirm("Do you want to delete this Lifeguard contact?");
@@ -181,10 +171,14 @@
                 alert("Lifeguard contact was not deleted");
             }
                         
-        };//End of deleteItem Function
+        };
+/************************************************************End of delete Function**************************************************************************/        
         
         
-                            
+        
+        
+        
+/*********************************************************Start of clearLocal Function***********************************************************************/                            
         var clearLocal = function()
         {
              
@@ -201,6 +195,43 @@
                     return false;
                 }
         };//end clear local function
+/*********************************************************End of clearLocal Function*************************************************************************/        
+        
+        
+        
+        
+        
+/*********************************************************Start of editItem Function*************************************************************************/       
+        var editItem = function(key)
+        {
+            var value = localStorage.getItem(this.key);
+            
+            var item = JSON.parse(value);
+            
+            toggleControls("off");
+            
+            $('#firstName').val(item.firstName[1]); 
+            $('#lastName').val(item.lastName[1]);
+            $('#phoneNumber').val(item.phoneNumber[1]);
+            $('#pools').val(item.pools[1]);
+            $('#cprDate').val(item.cprDate[1]);
+            $('#firstAidDate').val(item.firstAidDate[1]);
+            $('#lifeguardDate').val(item.lifeguardDate[1]);
+            
+            
+            editSubmit.off("click", storeData);
+           
+            $("#submit").val("Edit Lifeguard");
+            
+            var editSubmit = $("submit");
+            
+            editSubmit.on("click", storeData);
+            
+            editSubmit.key = this.key;                      
+        }   
+/*********************************************************End of editItem Function**************************************************************************/ 
+
+
         
         
         

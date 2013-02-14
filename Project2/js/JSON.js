@@ -21,7 +21,6 @@ var json =
       "firstAidDate":		["First Aid Certification Date:", "2010-04-07"],
       "lifeguardDate":		["Lifeguard Certification Date:", "2010-04-07"],
       "pools":				["What is your pool?", "Knightsbridge"],
-      "jobValue":			["Job:", "Pool Attendant"], 
       },
      
 "contact3":
@@ -33,7 +32,6 @@ var json =
       "firstAidDate":		["First Aid Certification Date:", "2010-04-07"],
       "lifeguardDate":		["Lifeguard Certification Date:", "2010-04-07"],
       "pools":				["What is your pool?", "Rock Hill Country Club"],
-      "jobValue":			["Job:", "Lifeguard"], 
       },
       
 "contact4":
@@ -45,7 +43,6 @@ var json =
       "firstAidDate":		["First Aid Certification Date:", "2010-04-07"],
       "lifeguardDate":		["Lifeguard Certification Date:", "2010-04-07"],
       "pools":				["What is your pool?", "Laurel Creek"],
-      "jobValue":			["Job:", "Lifeguard"], 
       },
       
 "contact5":
@@ -58,7 +55,6 @@ var json =
       "firstAidDate":		["First Aid Certification Date:", "2011-06-25"],
       "lifeguardDate":		["Lifeguard Certification Date:", "2011-06-25"],
       "pools":				["What is your pool?", "Rolling Hills"],
-      "jobValue":			["Job:", "Lifeguard"], 
       },
 
 "contact6":
@@ -70,7 +66,6 @@ var json =
       "firstAidDate":		["First Aid Certification Date:", "2011-12-10"],
       "lifeguardDate":		["Lifeguard Certification Date:", "2011-12-10"],
       "pools":				["What is your pool?", "Shiland"],
-      "jobValue":			["Job:", "Lifeguard"], 
       },
 
 "contact7":
@@ -82,7 +77,6 @@ var json =
       "firstAidDate":		["First Aid Certification Date:", "2011-06-25"],
       "lifeguardDate":		["Lifeguard Certification Date:", "2011-06-25"],
       "pools":				["What is your pool?", "River Hills Country Club"],
-      "jobValue":			["Job:", "Lifeguard"], 
 
       },
 
@@ -95,7 +89,6 @@ var json =
       "firstAidDate":		["First Aid Certification Date:", "2011-12-10"],
       "lifeguardDate":		["Lifeguard Certification Date:", "2011-12-10"],
       "pools":				["What is your pool?", "Baxter"],
-      "jobValue":			["Job:", "Pool Attendant"], 
       },
 
 "contact9":
@@ -107,7 +100,6 @@ var json =
       "firstAidDate":		["First Aid Certification Date:", "2011-06-25"],
       "lifeguardDate":		["Lifeguard Certification Date:", "2011-06-25"],
       "pools":				["What is your pool?", "Emmett Scott"],
-      "jobValue":			["Job:", "Pool Attendant"], 
       },
 
 "contact10":
@@ -119,7 +111,6 @@ var json =
       "firstAidDate":		["First Aid Certification Date:", "2011-12-10"],
       "lifeguardDate":		["Lifeguard Certification Date:", "2011-12-10"],
       "pools":				["What is your pool?", "Oakwood"],
-      "jobValue":			["Job:", "Pool Attendant"], 
       },
 
 "contact11":
@@ -131,7 +122,6 @@ var json =
       "firstAidDate":		["First Aid Certification Date:", "2011-12-10"],
       "lifeguardDate":		["Lifeguard Certification Date:", "2011-12-10"],
       "pools":				["What is your pool?", "Northside"],
-      "jobValue":			["Job:", "Lifeguard"], 
       },
 
 "contact12":
@@ -143,7 +133,6 @@ var json =
       "firstAidDate":		["First Aid Certification Date:", "2011-12-10"],
       "lifeguardDate":		["Lifeguard Certification Date:", "2011-12-10"],
       "pools":				["What is your pool?", "Meadow Lakes 1"],
-      "jobValue":			["Job:", "Pool Attendant"], 
       },
 
 
@@ -156,7 +145,6 @@ var json =
       "firstAidDate":		["First Aid Certification Date:", "2011-12-10"],
       "lifeguardDate":		["Lifeguard Certification Date:", "2011-12-10"],
       "pools":				["What is your pool?", "Meadow Lakes 2"],
-      "jobValue":			["Job:", "Lifeguard"], 
       },
 
 "contact14":
@@ -168,7 +156,6 @@ var json =
       "firstAidDate":		["First Aid Certification Date:", "2011-12-10"],
       "lifeguardDate":		["Lifeguard Certification Date:", "2011-12-10"],
       "pools":				["What is your pool?", "Boyd Hill"],
-      "jobValue":			["Job:", "Lifeguard"], 
       },
 
 "contact15":
@@ -181,9 +168,6 @@ var json =
       "firstAidDate":		["First Aid Certification Date:", "2011-12-10"],
       "lifeguardDate":		["Lifeguard Certification Date:", "2011-12-10"],
       "pools":				["What is your pool?", "Northside"],
-      "jobValue":			["Job:", "Lifeguard"], 
-      "slide":				["How many hours can you work a week?:", "36"],
-      "comments":			["Comments:", "I will take as many hours as you can give me"]
       },
 
 "contact16":
@@ -195,7 +179,6 @@ var json =
       "firstAidDate":		["First Aid Certification Date:", "2011-12-10"],
       "lifeguardDate":		["Lifeguard Certification Date:", "2011-12-10"],
       "pools":				["What is your pool?", "Meadow Lakes 1"],
-      "jobValue":			["Job:", "Lifeguard"], 
       },
       
 "contact17":
@@ -207,8 +190,6 @@ var json =
       "firstAidDate":		["First Aid Certification Date:", "2011-12-10"],
       "lifeguardDate":		["Lifeguard Certification Date:", "2011-12-10"],
       "pools":				["What is your pool?", "Laurel Creek"],
-      "jobValue":			["Job:", "Lifeguard"], 
-
       },
 
 "contact18":
@@ -220,7 +201,6 @@ var json =
       "firstAidDate":		["First Aid Certification Date:", "2010-04-07"],
       "lifeguardDate":		["Lifeguard Certification Date:", "2010-04-07"],
       "pools":				["What is your pool?", "Knightsbridge"],
-      "jobValue":			["Job:", "Lifeguard"], 
       },
 
 "contact19":
@@ -232,7 +212,6 @@ var json =
       "firstAidDate":		["First Aid Certification Date:", "2010-04-07"],
       "lifeguardDate":		["Lifeguard Certification Date:", "2010-04-07"],
       "pools":				["What is your pool?", "Meadow Lakes 2"],
-      "jobValue":			["Job:", "Lifeguard"], 
       },
       
 "contact20":
@@ -244,7 +223,6 @@ var json =
       "firstAidDate":		["First Aid Certification Date:", "2010-04-07"],
       "lifeguardDate":		["Lifeguard Certification Date:", "2010-04-07"],
       "pools":				["What is your pool?", "River Hills Country Club"],
-      "jobValue":			["Job:", "Lifeguard"], 
       },
 
 

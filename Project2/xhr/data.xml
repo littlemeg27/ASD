@@ -8,7 +8,6 @@
 			<firstAidDate>2011-06-25</firstAidDate>
 			<lifeguardDate>2011-06-25</lifeguardDate>
 			<pools>Emmett Scott</pools>
-			<jobValue>Lifeguard</jobValue>
 		</item>
 		
 		<item>
@@ -19,7 +18,6 @@
 			<firstAidDate>2010-04-07</firstAidDate>
 			<lifeguardDate>2010-04-07</lifeguardDate>
 			<pools>Knightsbridge</pools>
-			<jobValue>Pool Attendent</jobValue>
 		</item>
 		
 		<item>
@@ -30,7 +28,6 @@
 			<firstAidDate>2010-04-07</firstAidDate>
 			<lifeguardDate>2010-04-07</lifeguardDate>
 			<pools>Rock Hill Country Club</pools>
-			<jobValue>Lifeguard</jobValue>
 		</item>
 		
 		<item>
@@ -41,7 +38,6 @@
 			<firstAidDate>2011-06-25</firstAidDate>
 			<lifeguardDate>2011-06-25</lifeguardDate>
 			<pools>Laurel Creek</pools>
-			<jobValue>Lifeguard</jobValue>
 		</item>
 		
 		<item>
@@ -52,7 +48,6 @@
 			<firstAidDate>2011-06-25</firstAidDate>
 			<lifeguardDate>2011-06-25</lifeguardDate>
 			<pools>Rolling Hills</pools>
-			<jobValue>Lifeguard</jobValue>
 		</item>
 			
 		<item>
@@ -63,7 +58,6 @@
 			<firstAidDate>2011-06-25</firstAidDate>
 			<lifeguardDate>2011-06-25</lifeguardDate>
 			<pools>Shiland</pools>
-			<jobValue>Lifeguard</jobValue>
 		</item>
 			
 		<item>
@@ -74,7 +68,6 @@
 			<firstAidDate>2011-06-25</firstAidDate>
 			<lifeguardDate>2011-06-25</lifeguardDate>
 			<pools>River Hill Country Club</pools>
-			<jobValue>Lifeguard</jobValue>
 		</item>
 			
 		<item>
@@ -85,7 +78,6 @@
 			<firstAidDate>2011-06-25</firstAidDate>
 			<lifeguardDate>2011-06-25</lifeguardDate>
 			<pools>Baxter</pools>
-			<jobValue>Pool Attendent</jobValue>
 		</item>
 			
 		<item>
@@ -96,7 +88,6 @@
 			<firstAidDate>2011-06-25</firstAidDate>
 			<lifeguardDate>2011-06-25</lifeguardDate>
 			<pools>Emmett Scott</pools>
-			<jobValue>Lifeguard</jobValue>
 		</item>
 			
 		<item>
@@ -107,7 +98,6 @@
 			<firstAidDate>2011-06-25</firstAidDate>
 			<lifeguardDate>2011-06-25</lifeguardDate>
 			<pools>Oakwood</pools>
-			<jobValue>Pool Attendent</jobValue>
 		</item>
 			
 		<item>
@@ -118,7 +108,6 @@
 			<firstAidDate>2011-06-25</firstAidDate>
 			<lifeguardDate>2011-06-25</lifeguardDate>
 			<pools>Northside</pools>
-			<jobValue>Lifeguard</jobValue>
 		</item>
 			
 		<item>
@@ -129,7 +118,6 @@
 			<firstAidDate>2011-06-25</firstAidDate>
 			<lifeguardDate>2011-06-25</lifeguardDate>
 			<pools>Meadow Lakes 1</pools>
-			<jobValue>Pool Attendent</jobValue>
 		</item>
 			
 		<item>
@@ -140,7 +128,6 @@
 			<firstAidDate>2011-06-25</firstAidDate>
 			<lifeguardDate>2011-06-25</lifeguardDate>
 			<pools>Meadow Lakes 2</pools>
-			<jobValue>Lifeguard</jobValue>
 		</item>
 			
 		<item>
@@ -151,7 +138,6 @@
 			<firstAidDate>2011-06-25</firstAidDate>
 			<lifeguardDate>2011-06-25</lifeguardDate>
 			<pools>Boyd Hill</pools>
-			<jobValue>Lifeguard</jobValue>
 		</item>
 			
 		<item>
@@ -162,7 +148,6 @@
 			<firstAidDate>2011-06-25</firstAidDate>
 			<lifeguardDate>2011-06-25</lifeguardDate>
 			<pools>Northside</pools>
-			<jobValue>Lifeguard</jobValue>
 		</item>
 			
 		<item>
@@ -173,7 +158,6 @@
 			<firstAidDate>2011-06-25</firstAidDate>
 			<lifeguardDate>2011-06-25</lifeguardDate>
 			<pools>Meadow Lakes 1</pools>
-			<jobValue>Lifeguard</jobValue>
 		</item>
 
 		<item>
@@ -183,8 +167,7 @@
 			<cprDate>2011-05-31</cprDate>
 			<firstAidDate>2011-06-25</firstAidDate>
 			<lifeguardDate>2011-06-25</lifeguardDate>
-			<pools>Laurel Creek</pools>
-			<jobValue>Lifeguard</jobValue>
+			<pools>Laurel Creek</pools>	
 		</item>
 			
 		<item>
@@ -195,7 +178,6 @@
 			<firstAidDate>2011-06-25</firstAidDate>
 			<lifeguardDate>2011-06-25</lifeguardDate>
 			<pools>Knightsbridge</pools>
-			<jobValue>Lifeguard</jobValue>
 		</item>
 			
 		<item>
@@ -206,7 +188,6 @@
 			<firstAidDate>2011-06-25</firstAidDate>
 			<lifeguardDate>2011-06-25</lifeguardDate>
 			<pools>Meadow Lakes 2</pools>
-			<jobValue>Lifeguard</jobValue>
 		</item>
 			
 		<item>
@@ -217,7 +198,6 @@
 			<firstAidDate>2011-06-25</firstAidDate>
 			<lifeguardDate>2011-06-25</lifeguardDate>
 			<pools>River Hills Country Club</pools>
-			<jobValue>Lifeguard</jobValue>
 		</item>
 		
 </lifeguardInfo>
