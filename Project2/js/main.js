@@ -18,6 +18,28 @@
         
                 var myForm = $('#lifeguardForm');
                 var errorFormLink = $('#errorFormLink');
+                var displayData = $('#displayData');
+                var clearData = $('clearData');
+                var saveData = $('saveData');
+                
+                
+            
+            
+            $("#displayData").on('click', function() 
+            {
+            getData();
+            });
+            
+            $("#clearData").on('click', function() 
+            {
+            clearLocal();
+            });
+
+            $("#saveData").on('click', function() 
+            {
+            storeData();
+            });
+
                 
                 
 /*********************************************************Start of validate Function*************************************************************************/                
@@ -45,22 +67,7 @@
                         var data = myForm.serializeArray();
                         storeData(data);
                     }
-        }); //End of validate form
-                
-            
-            
-            
-            $("#displayData").on('click', function() 
-            {
-            getData();
-            });
-            
-            $("#clearData").on('click', function() 
-            {
-            clearLocal();
-            });
-            
-        });
+        });            
 /*********************************************************End of validate Function**************************************************************************/        
         
         
@@ -88,29 +95,31 @@
            $('#lifeguard').empty();
            $.ajax(
            {    
-	             url: "xhr/data.json", //What i am getting
-	             type: "GET", //I am getting not posting 
-	             dataType : "json", //Getting JSON data, located in data.json   
-	             success:function(result) //Going to use dataCall for the name to call my data
-	             {
-			                for(var i=0, len=result.lifeguardInfo.length; i<len; i++)//for loop to read the whole json
-			                {
-			                  var guard = result.lifeguardInfo[i];
-			                  $('' +
-			                    '<div class="lifeguard">'+
-			                    '<h3>' + guard.lastName[1] + guard.firstName[1] + '</h3>'+
-			                    '<p>' + guard.phoneNumber[1] + '</p>'+
-			                    '<p>' + guard.cprDate[1] + '</p>'+
-			                    '<p>' + guard.firstAidDate[1] + '</p>'+
-			                    '<p>' + guard.lifeguardDate[1] + '</p>'+
-			                    '<p>' + guard.pools[1] + '</p>'+
-			                    '</div>'
-			                    ).appendTo("#lifeguard");
-			                }
-	                                
-	             }
+                 url: "xhr/data.json", //What i am getting
+                 type: "GET", //I am getting not posting 
+                 dataType : "json", //Getting JSON data, located in data.json   
+                 success:function(result) //Going to use dataCall for the name to call my data
+                 {
+                            for(var i=0, len=result.lifeguardInfo.length; i<len; i++)//for loop to read the whole json
+                            {
+                              var guard = result.lifeguardInfo[i];
+                              $('' +
+                                '<div class="lifeguard">'+
+                                '<h3>' + guard.lastName[1] + guard.firstName[1] + '</h3>'+
+                                '<p>' + guard.phoneNumber[1] + '</p>'+
+                                '<p>' + guard.cprDate[1] + '</p>'+
+                                '<p>' + guard.firstAidDate[1] + '</p>'+
+                                '<p>' + guard.lifeguardDate[1] + '</p>'+
+                                '<p>' + guard.pools[1] + '</p>'+
+                                '</div>'
+                                ).appendTo("#lifeguard");
+                            }
+                                    
+                 }
      
-	       };
+           });
+           
+        };
 /*********************************************************End of getData Function**************************************************************************/       
         
         
@@ -208,7 +217,7 @@
             
             var item = JSON.parse(value);
             
-            toggleControls("off");
+            toggleControls("off"); //needs to be "defined"
             
             $('#firstName').val(item.firstName[1]); 
             $('#lastName').val(item.lastName[1]);
@@ -228,7 +237,10 @@
             editSubmit.on("click", storeData);
             
             editSubmit.key = this.key;                      
-        }   
+        };
+        
+        
+ });  
 /*********************************************************End of editItem Function**************************************************************************/ 
 
 
@@ -323,14 +335,3 @@
                 
                 
            });//End of lifeguard page
-                
-
-          
-          
-     
-
-
-
-
-
-
