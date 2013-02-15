@@ -19,26 +19,18 @@
                 var myForm = $('#lifeguardForm');
                 var errorFormLink = $('#errorFormLink');
                 var displayData = $('#displayData');
-                var clearData = $('clearData');
-                var saveData = $('saveData');
+                var clearData = $('#clearData');
+                var saveData = $('#submit');
                 
                 
             
             
-            $("#displayData").on('click', function() 
-            {
-            getData();
-            });
-            
-            $("#clearData").on('click', function() 
-            {
-            clearLocal();
-            });
+            $("#displayData").on('click', getData);
+                        
+            $("#clearData").on('click', clearLocal); 
 
-            $("#saveData").on('click', function() 
-            {
-            storeData();
-            });
+            $("#submit").on('click', storeData);
+            
 
                 
                 
@@ -217,8 +209,6 @@
             
             var item = JSON.parse(value);
             
-            toggleControls("off"); //needs to be "defined"
-            
             $('#firstName').val(item.firstName[1]); 
             $('#lastName').val(item.lastName[1]);
             $('#phoneNumber').val(item.phoneNumber[1]);
@@ -275,13 +265,14 @@
                                                 var guard = result.lifeguardInfo[i];
                                                
                                                 
-                                                $('' +
-                                                    '<div class="lifeguard">'+
-                                                        '<h3>' + guard.lastName[1] + guard.firstName[1] + '</h3>'+
-                                                        '<p>' + guard.phoneNumber[1] + '</p>'+
-                                                    '</div>'
+                                                $('' +  
+                                                       	'<li>' +
+                                                        	'<h3>' + guard.lastName[1] + guard.firstName[1] + '<br>' + '</h3>'+ 
+                                                        	'<p>' + guard.phoneNumber[1] + '</p>'+
+                                                        '</li>' 
                                                  ).appendTo("#lifeguard");
                                             }
+                                            $('#lifeguard').listview();
                                 
                                 }
                        
@@ -289,11 +280,9 @@
             
                 });
                 
-                
           
-          
-          
-          
+
+             
               $("#loadXML").on('click', function() //when i click on this button something should fire
                 {
                 console.log($("#loadXML"));
@@ -312,7 +301,7 @@
                                             
                                            $(xml).find("item").each(function () 
                                            {
-                                                    var guardList      = $(this).find('item').text(),
+                                                    var guard      = $(this).find('item').text(),
                                                     
                                                     firstName=        $(this).find('firstName').text(),
                                                     lastName=        $(this).find('lastName').text(),
