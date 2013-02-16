@@ -18,18 +18,25 @@
         
                 var myForm = $('#lifeguardForm');
                 var errorFormLink = $('#errorFormLink');
-                var displayData = $('#displayData');
-                var clearData = $('#clearData');
-                var saveData = $('#submit');
+                var $displayData = $('#displayData');
+                var $clearData = $('#clearData');
+                var $saveData = $('#submit1');
                 
                 
             
             
-            $("#displayData").on('click', getData);
+            // $displayData.on('click', getData);
                         
-            $("#clearData").on('click', clearLocal); 
+             $clearData.on('click', clearLocal); 
 
-            $("#submit").on('click', storeData);
+             $saveData.on('click', storeData);
+             
+             $displayData.on('click', function(evt) 
+             {
+             evt.preventDefault;
+  getData();
+  return false;
+});
             
 
                 
@@ -84,14 +91,18 @@
 /*********************************************************Start of getData Function**************************************************************************/       
         var getData = function()
         {
+        	
            $('#lifeguard').empty();
            $.ajax(
            {    
-                 url: "xhr/data.json", //What i am getting
-                 type: "GET", //I am getting not posting 
-                 dataType : "json", //Getting JSON data, located in data.json   
-                 success:function(result) //Going to use dataCall for the name to call my data
+           
+                 url: 'js/json.js', //What i am getting
+                 crossDomain: true,
+                 isLocal: true,
+                 dataType : "jsonp", //Getting JSON data, located in data.json 
+                 complete: function(result) //Going to use dataCall for the name to call my data
                  {
+                            console.log(result);
                             for(var i=0, len=result.lifeguardInfo.length; i<len; i++)//for loop to read the whole json
                             {
                               var guard = result.lifeguardInfo[i];
@@ -147,6 +158,7 @@
                                 
                 localStorage.setItem(id, JSON.stringify(item)); //Save data in not local storage: Use Stringify to convert our object to a string.
                 alert("Lifeguard Saved!");
+                location.reload();
                 
         };
 /*********************************************************End of saveData Function**************************************************************************/
