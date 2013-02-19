@@ -15,7 +15,6 @@
                 
         $('#addItem').on('pageinit', function()
         {
-        
                 var myForm = $('#lifeguardForm');
                 var errorFormLink = $('#errorFormLink');
                 var $displayData = $('#displayData');
@@ -23,19 +22,19 @@
                 var $saveData = $('#submit1');
                 
                 
-            
-            
-            // $displayData.on('click', getData);
+          
                         
              $clearData.on('click', clearLocal); 
+             
 
              $saveData.on('click', storeData);
              
+        $.mobile.changePage('#home');
              $displayData.on('click', function(evt) 
              {
              evt.preventDefault;
-  getData();
-  return false;
+             getData();
+             return false;
 });
             
 
@@ -261,6 +260,7 @@
                 console.log($("#loadJSON"));
                 
                         $('#lifeguard').empty();
+                        
                         $.ajax(
                         {    
                                 url: "xhr/data.json", //What i am getting
