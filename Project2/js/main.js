@@ -260,7 +260,6 @@
                 console.log($("#loadJSON"));
                 
                         $('#lifeguard').empty();
-                        
                         $.ajax(
                         {    
                                 url: "xhr/data.json", //What i am getting
