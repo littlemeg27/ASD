@@ -12,6 +12,7 @@
 	 
 	 $('#addItem').on('pageinit', function()
 	 {
+	    
 	     alert("The add item page is open");
 	     
 			     $('#saveData').on('click', function()
@@ -52,7 +53,13 @@
 			                autoFillData(); //Calls the auto fill data function
 			            }
 			            
-			            
+			            else
+			            {
+			            	for(var i=0, len=localStorage.length; i<len; i++)
+			            	{
+				          		  $('')//Jen, not sure how to get to the JSON with only $('p')
+				          	}
+			            }
 			     });
 			    
 			    
