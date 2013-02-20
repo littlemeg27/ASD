@@ -10,7 +10,7 @@
 	     alert("The home page is open");       
 	 });  
 	 
-	  $('#addItem').on('pageinit', function()
+	 $('#addItem').on('pageinit', function()
 	 {
 	     alert("The add item page is open");
 	     
@@ -40,6 +40,38 @@
 		                alert("Lifeguard Saved!");
 		                location.reload();
 		 
+			     });
+			     
+			     
+			     $('#getData').on('click', function()
+			     {
+					    
+					    if(localStorage.length === 0)
+			            {
+			                alert("There are no Lifeguards saved! Load default data");
+			                autoFillData(); //Calls the auto fill data function
+			            }
+			            
+			            
+			     });
+			    
+			    
+			     $('#deleteItem').on('click', function()//Not sure if this will work yet, untested.
+			     {
+					    var ask = confirm("Do you want to delete this Lifeguard contact?");
+	                
+			            if(ask)
+			            {
+			                localStorage.removeItem(key);
+			                alert("Lifeguard contact was deleted!");
+			                window.location.reload();
+			            }
+			                
+			            else
+			            {
+			                alert("Lifeguard contact was not deleted");
+			            }
+ 
 			     });
 	            
 	 });   
