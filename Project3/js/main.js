@@ -12,27 +12,12 @@
 	 
 	 $('#addItem').on('pageinit', function()
 	 {
+	 	alert("The add item page is open");
+	 	
                                   
          console.log($("#loadJSON"));
                 
-         $('#lifeguard').empty();
-         $.ajax(
-         {    
-            url: "xhr/data.json", //What i am getting
-            type: "GET", //I am getting not posting 
-            dataType : "json", //Getting JSON data, located in data.json   
-            success:function(result) //Going to use dataCall for the name to call my data
-            {
-              console.log("This is my JSON Data", result);                   
-            }
-                       
-         });
-            
-
-	     
-	    
-	     alert("The add item page is open");
-	     
+         
 			     $('#saveData').on('click', function()
 			     {
 				    var key;
@@ -62,24 +47,52 @@
 			     });
 			     
 			     
-			     $('#getData').on('click', function()
+			     $('#getData').on('click', function()//Hope this works how i want it to
 			     {
 					    
-					    if(localStorage.length === 0)
-			            {
+					    if(localStorage.length === 0)//Test to see if there is something in local storage if there is not
+			            {							//pull up the JSON
 			                alert("There are no Lifeguards saved! Load default data");
 			                autoFillData(); //Calls the auto fill data function
 			            }
 			            
-			            else
+			            else 
 			            {
-			            	for(var i=0, len=localStorage.length; i<len; i++)
-			            	{
-				          		  $('')//Jen, not sure how to get to the JSON with only $('p')
-				          	}
+			            console.log($("#loadJSON"));
+                
+	                        $('#lifeguard').empty();
+	                        $.ajax(
+	                        {    
+	                                url: "xhr/data.json", //What i am getting
+	                                type: "GET", //I am getting not posting 
+	                                dataType : "json", //Getting JSON data, located in data.json   
+	                                success:function(result) //Going to use dataCall for the name to call my data
+	                                {
+	                                    
+	                                        console.log("This is my JSON Data", result); 
+	                                       
+	                                            
+	                                            for(var i=0, len=result.lifeguardInfo.length; i<len; i++)//for loop to read the whole json
+	                                            {
+	                                                var guard = result.lifeguardInfo[i];
+	                                               
+	                                                
+	                                                $('' +  
+	                                                       	'<li>' +
+	                                                        	'<h3>' + guard.lastName[1] + guard.firstName[1] + '<br>' + '</h3>'+ 
+	                                                        	'<p>' + guard.phoneNumber[1] + '</p>'+
+	                                                        '</li>' 
+	                                                 ).appendTo("#lifeguard");
+	                                            }
+	                                            $('#lifeguard').listview();
+	                                
+	                                 }
+	                                 
+	                         }
+
+			            
 			            }
-			     });
-			    
+			            			    
 			    
 			     $('#deleteItem').on('click', function()//Not sure if this will work yet, untested.
 			     {
