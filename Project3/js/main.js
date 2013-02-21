@@ -12,6 +12,24 @@
 	 
 	 $('#addItem').on('pageinit', function()
 	 {
+                                  
+         console.log($("#loadJSON"));
+                
+         $('#lifeguard').empty();
+         $.ajax(
+         {    
+            url: "xhr/data.json", //What i am getting
+            type: "GET", //I am getting not posting 
+            dataType : "json", //Getting JSON data, located in data.json   
+            success:function(result) //Going to use dataCall for the name to call my data
+            {
+              console.log("This is my JSON Data", result);                   
+            }
+                       
+         });
+            
+
+	     
 	    
 	     alert("The add item page is open");
 	     
