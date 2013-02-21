@@ -88,10 +88,10 @@
 	                                
 	                                 }
 	                                 
-	                         }
+	                          }
 
 			            
-			            }
+			             }//Need to figure out how to put a transition page to display data
 			            			    
 			    
 			     $('#deleteItem').on('click', function()//Not sure if this will work yet, untested.
