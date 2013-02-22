@@ -4,7 +4,7 @@
       "db": "http://127.0.0.1:5984/asdproject3"
     },
     "local": {
-      "db": "https://littlemeg27:password@littlemeg27.cloudant.com/asdproject3"
+      "db": "https://littlemeg27:Dragonfly!@littlemeg27.cloudant.com/asdproject3"
     }
   }
 }

@@ -14,6 +14,8 @@
 	 {
 	 	alert("The add item page is open");
 	 	
+	 	var displayLifeguard = $('#displayLifeguard')
+	 	
                                   
          console.log($("#loadJSON"));
                 
@@ -58,9 +60,11 @@
 			            
 			            else 
 			            {
-			            console.log($("#loadJSON"));
+			            console.log($("#getData"));
+			            
+			            displayLifeguard.on();
                 
-	                        $('#lifeguard').empty();
+	                        $('#displayLifeguard').empty();
 	                        $.ajax(
 	                        {    
 	                                url: "xhr/data.json", //What i am getting
@@ -70,7 +74,7 @@
 	                                {
 	                                    
 	                                        console.log("This is my JSON Data", result); 
-	                                       
+	                                        
 	                                            
 	                                            for(var i=0, len=result.lifeguardInfo.length; i<len; i++)//for loop to read the whole json
 	                                            {
@@ -82,9 +86,9 @@
 	                                                        	'<h3>' + guard.lastName[1] + guard.firstName[1] + '<br>' + '</h3>'+ 
 	                                                        	'<p>' + guard.phoneNumber[1] + '</p>'+
 	                                                        '</li>' 
-	                                                 ).appendTo("#lifeguard");
+	                                                 ).appendTo("#displayLifeguard");
 	                                            }
-	                                            $('#lifeguard').listview();
+	                                            $('#displayLifeguard').listview();
 	                                
 	                                 }
 	                                 
