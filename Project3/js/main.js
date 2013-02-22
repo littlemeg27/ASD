@@ -14,7 +14,9 @@
 	 {
 	 	alert("The add item page is open");
 	 	
-	 	var displayLifeguard = $('#displayLifeguard')
+	 	var displayLifeguard = $('#displayLifeguard');
+	 	var autofillData = $('#autofillData');
+
 	 	
                                   
          console.log($("#loadJSON"));
@@ -52,14 +54,14 @@
 			     $('#getData').on('click', function()//Hope this works how i want it to
 			     {
 					    
-					  /* if(localStorage.length === 0)//Test to see if there is something in local storage if there is not
+					    if(localStorage.length === 0)//Test to see if there is something in local storage if there is not
 			            {							//pull up the JSON
 			                alert("There are no Lifeguards saved! Load default data");
 			                autoFillData(); //Calls the auto fill data function
-			            }*/
+			            }
 			            
-			          /*  else 
-			            {*/
+			            else 
+			            {
 			            console.log($("#getData"));
 			            
 			            displayLifeguard.on();
@@ -97,6 +99,19 @@
 	                    }
 			   
 			    });//Need to figure out how to put a transition page to display data
+			    
+			    
+			   var autofillData = function ()
+			   { 
+		               var id;
+		               
+		               for(var n in json)
+		               {
+		                  id = Math.floor(Math.random()*100000001);
+		                  localStorage.setItem(id, JSON.stringify(json[n]));     
+		               }       
+              
+               }; //End of auto fill data
 			            			    
 			    
 			     $('#deleteItem').on('click', function()//Not sure if this will work yet, untested.
