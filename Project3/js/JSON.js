@@ -119,7 +119,6 @@ var json =
       "firstName":			["First Name:", "Sharron"],
       "lastName": 			["Last Name:", "Goto"],
       "phoneNumber":		["Phone Number:", "899-252-6741"],
-      "email":				["Email:", "servercompass@gmail.com"],
       "pools":				["What is your pool?", "Northside"]
       },
 
