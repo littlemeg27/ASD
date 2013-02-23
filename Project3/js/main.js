@@ -133,7 +133,7 @@
 		        }//End function deleteAll
 
 			            			    
-			    
+			    //Put edit delete item functions on the transition page 
 			     $('#deleteItem').on('click', function()//Not sure if this will work yet, untested.
 			     {
 					    var ask = confirm("Do you want to delete this Lifeguard contact?");
