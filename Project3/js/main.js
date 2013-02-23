@@ -62,7 +62,7 @@
 			            
 			            else 
 			            {
-			            console.log($("#getData"));
+			            console.log($("#displayLifeguard"));
 			            
 			            displayLifeguard.on();
                 
@@ -112,6 +112,26 @@
 		               }       
               
                }; //End of auto fill data
+               
+               
+               $('#deleteAll').on('click', function()
+               {
+		            if(localStorage.length === 0)
+		            {
+		                alert("There are no lifeguards clear!");
+		    
+		            }
+		                    else
+		                {
+		                    localStorage.clear();
+		                    alert("All Lifeguards Have Been Deleted!");
+		                    window.location.reload();
+		                    return false;
+		                 }
+
+                
+		        }//End function deleteAll
+
 			            			    
 			    
 			     $('#deleteItem').on('click', function()//Not sure if this will work yet, untested.
@@ -131,6 +151,34 @@
 			            }
  
 			     });
+			     
+			     
+				$('#editItem').on(click,function(key)//Did it this way because i dont know how to put the make links function
+		        {
+		            var value = localStorage.getData(key);
+		            
+		            var item = JSON.parse(value);
+		            
+		            $('#firstName').val(item.firstName[1]); 
+		            $('#lastName').val(item.lastName[1]);
+		            $('#phoneNumber').val(item.phoneNumber[1]);
+		            $('#pools').val(item.pools[1]);
+		            $('#cprDate').val(item.cprDate[1]);
+		            $('#firstAidDate').val(item.firstAidDate[1]);
+		            $('#lifeguardDate').val(item.lifeguardDate[1]);
+		            
+		            
+		            submitEdit.off("click", storeData);
+		           
+		            $("#submit").val("Edit Lifeguard");
+		            
+		            var submitEdit = $("submit");
+		            
+		            submitEdit.on("click", storeData);
+		            
+		            submitEdit.key = this.key;                      
+		        });
+
 	            
 	 });   
 	 
