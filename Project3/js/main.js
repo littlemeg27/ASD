@@ -64,7 +64,8 @@
 			            {
 			            console.log($("#displayLifeguard"));
 			            
-			            displayLifeguard.on();
+			            displayLifeguard.on();//This is supposed to be the pageChange....Not sure its working 
+			            alert("I made it after the displayLifeguard");//gets this far, doesnt do anything
                 
 	                        $('#displayLifeguard').empty();
 	                        $.ajax(
@@ -74,7 +75,7 @@
 	                                dataType : "json", //Getting JSON data, located in data.json   
 	                                success:function(result) //Going to use dataCall for the name to call my data
 	                                {
-	                                    
+	                                    	alert("I made it after the ajax call");
 	                                        console.log("This is my JSON Data", result); 
 	                                        
 	                                            
