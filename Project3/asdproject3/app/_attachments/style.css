@@ -1,0 +1,58 @@
+/* 
+Brenna Pavlinchak
+MiU 1212
+Project 1
+This is the css style sheet for my addItem page
+11/4/2012 
+*/
+
+
+		label.error
+		{
+			display:block;
+			margin:10px 0px;
+			color: red;
+		}
+		
+		#errorFormLink
+		{
+			display: none; !important
+		}
+		
+		p.cta
+		{
+			float: right;
+		}
+		
+		.addItemButton
+		{
+			float: middle;
+			padding-left: 45px;
+			padding-right: 45px;
+			background-image: -webkit-gradient(linear, left top, left bottom, from( #FF1543 /*{a-bar-background-start}*/), 
+			to( #72091c /*{a-bar-background-end}*/));
+			background-image: -webkit-linear-gradient( #FF1543 /*{a-bar-background-start}*/, #72091c /*{a-bar-background-end}*/); /* Chrome 10 , Saf5.1  */
+			background-image:    -moz-linear-gradient( #FF1543 /*{a-bar-background-start}*/, #72091c /*{a-bar-background-end}*/); /* FF3.6 */
+			background-image:     -ms-linear-gradient( #FF1543 /*{a-bar-background-start}*/, #72091c /*{a-bar-background-end}*/); /* IE10 */
+			background-image:      -o-linear-gradient( #FF1543 /*{a-bar-background-start}*/, #72091c /*{a-bar-background-end}*/); /* Opera 11.10  */
+			background-image:         linear-gradient( #FF1543 /*{a-bar-background-start}*/, #72091c /*{a-bar-background-end}*/);
+
+		}
+	
+		.footer
+		{
+			border: none; /*{a-bhover-border}*/;
+			background: #112074 /*{a-bhover-background-color}*/;
+			font-weight: bold;
+			color: #ffffff /*{a-bhover-color}*/;
+			text-shadow: 0 /*{a-bhover-shadow-x}*/ 1px /*{a-bhover-shadow-y}*/ 0 /*{a-bhover-shadow-radius}*/ #FFFFFF /*{a-bhover-shadow-color}*/;
+			background-image: -webkit-gradient(linear, left top, left bottom, from( #112074 /*{a-bhover-background-start}*/), to( #112074 /*{a-bhover-					background-end}*/)); /* Saf4+, Chrome */
+			background-image: -webkit-linear-gradient( #112074 /*{a-bhover-background-start}*/, #112074 /*{a-bhover-background-end}*/); /* Chrome 10+, Saf5.1+ 			*/
+			background-image:    -moz-linear-gradient( #112074 /*{a-bhover-background-start}*/, #112074 /*{a-bhover-background-end}*/); /* FF3.6 */
+			background-image:     -ms-linear-gradient( #112074 /*{a-bhover-background-start}*/, #112074 /*{a-bhover-background-end}*/); /* IE10 */
+			background-image:      -o-linear-gradient( #112074 /*{a-bhover-background-start}*/, #112074 /*{a-bhover-background-end}*/); /* Opera 11.10+ */
+			background-image:         linear-gradient( #112074 /*{a-bhover-background-start}*/, #112074 /*{a-bhover-background-end}*/);
+
+		}
+		
+		

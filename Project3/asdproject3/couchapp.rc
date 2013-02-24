@@ -3,8 +3,8 @@
     "local": {
       "db": "http://127.0.0.1:5984/asdproject3"
     },
-    "local": {
-      "db": "https://littlemeg27:Dragonfly!@littlemeg27.cloudant.com/asdproject3"
+    "cloudant": {
+      "db": "https://littlemeg27:Dragonfly!@littlemeg27.cloudant.com/project3"
     }
   }
 }

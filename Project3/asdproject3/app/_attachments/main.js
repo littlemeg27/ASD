@@ -69,7 +69,7 @@
 	                        $('#displayLifeguard').empty();
 	                        $.ajax(
 	                        {    
-	                                url: "xhr/data.json", //What i am getting
+	                                url: "json", //What i am getting
 	                                type: "GET", //I am getting not posting 
 	                                dataType : "json", //Getting JSON data, located in data.json   
 	                                success:function(result) //Going to use dataCall for the name to call my data
@@ -121,16 +121,16 @@
 		                alert("There are no lifeguards clear!");
 		    
 		            }
-		                else
+		                    else
 		                {
 		                    localStorage.clear();
 		                    alert("All Lifeguards Have Been Deleted!");
 		                    window.location.reload();
 		                    return false;
-		                }
+		                 }
 
                 
-		        });//End function deleteAll
+		        }//End function deleteAll
 
 			            			    
 			    //Put edit delete item functions on the transition page 
@@ -153,7 +153,7 @@
 			     });
 			     
 			     
-				$('#editItem').on('click',function(key)//Did it this way because i dont know how to put the make links function
+				$('#editItem').on(click,function(key)//Did it this way because i dont know how to put the make links function
 		        {
 		            var value = localStorage.getData(key);
 		            
