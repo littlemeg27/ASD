@@ -1,0 +1,179 @@
+<!DOCTYPE html> 
+<!--Brenna Pavlinchak-->
+<!--ASD 0213-->
+<!--Project 3-->
+
+
+<!--HTMLTAG-->
+
+	<html>
+		<head>
+			<meta charset= "utf-8"/>
+			<meta name= "description" content= "U.S.A. Lifeguarding"/>
+			<meta name= "keywords" content= "U.S.A., Lifeguarding, Pool Attendent"/>
+			<meta name= "robots" content= "index, flow"/>
+			<meta name= "HandheldFriendly" content= "True">
+			<meta name= "MobileOptimized" content= "320" />
+			<meta name= "viewport" 	 content="width=device-width, initial-scale=1.0"/>
+			
+		<!--css files here-->
+			<link rel="stylesheet" href="usaGuards.min.css" />
+			<link rel="stylesheet" href="usaGuards.css" />
+			<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile.structure-1.2.0.min.css" />
+			<link rel="stylesheet" href="style.css" type="text/css"/>
+			
+		<!--Modernizr goes here-->
+			<script src="modernizr.custom.64724.js"></script>		
+			
+		<body>
+			
+		
+		<div id="home" data-role="page">
+		
+			<header data-role="header" data-position="fixed"><!--header open-->
+					
+				<h1>U.S.A.<br>Lifeguards</h1>
+						
+			</header> <!--header closed-->
+			
+			<section>
+		
+				<p><a href="#addItem" data-role="button" data-ajax="false">Add a New Lifeguard!</a></p>
+				
+				<p><a href="#loadJSON" data-role="button" id="loadJSON" data-inline="true">Load JSON</a></p>
+				
+			</section>
+		
+	
+		</div>
+		
+		<div id="addItem" data-role="page">
+		
+			<header data-role="header" data-position="fixed"><!--header open-->
+					
+				<h1>U.S.A.<br>Lifeguards</h1>
+						
+			</header> <!--header closed-->
+			
+			<section>
+		
+				<form action="" id="lifeguardForm"><!--form open-->
+					
+				
+						<div><!--firstName open-->
+						
+							<label for="firstName">First Name</label>
+							<input type="text" name="firstName" id="firstName" placeholder="Hannah" class="required"/>
+							
+						</div><!--firstName closed-->
+						
+						
+						<div><!--lastName open-->
+						
+							<label for="lastName">Last Name</label>
+							<input type="text" name="lastName" id="lastName" placeholder="Murphy" class="required"/>
+							
+						</div><!--lastName closed-->
+						
+						
+						<div><!--phoneNumber open-->
+						
+							<label for="phoneNumber">Phone Number</label>
+							<input type="text" name="phoneNumber" id="phoneNumber" placeholder="899-596-8015" class="required phoneUS"/>
+							
+						</div><!--phoneNumber closed-->
+						
+												
+						<div><!--select open-->
+						
+							<label for="pools">What Pool do you work at?</label>
+							
+									<select name="pools" id="pools" data-native-menu="false"/>
+										<option value"#">Choose A Pool</option>
+										<option value"Baxter">Baxter</option>
+										<option value"boydHill">Boyd Hill</option>
+										<option value"emmettScott">Emmett Scott</option>
+										<option value"Knightsbridge">Knightsbridge</option>
+										<option value"laurelCreek">Laurel Creek</option>
+										<option value"meadowLakes1">Meadow Lakes 1</option>
+										<option value"meadowLakes2">Meadow Lakes 2</option>
+										<option value"Northside">Northside</option>
+										<option value"Oakwood">Oakwood</option>
+										<option value"riverHillsCountryClub">River Hills Country Club</option>
+										<option value"rockHillCountryClub">Rock Hill Country Club</option>
+										<option value"rollingHills">Rolling Hills</option>
+										<option value"Shiland">Shiland</option>
+									</select>
+								
+						</div><!--select closed-->
+												
+							
+						<div><!--form buttons open-->
+							
+							<button id="saveData">Save Form</button>
+							<button id="getData">Display Lifeguards</button>
+							<button id="deleteAll">Delete all Contacts</button>
+								
+						</div><!--form buttons closed-->
+						
+						<div>
+						
+							<a href="#displayLifeguard" id="getData" data-role="page" data-transition="pop">Lifeguards</a>
+						
+						</div>
+					
+				</form><!--form closed-->	
+				
+					
+
+				
+			</section>
+		
+	
+		</div><!--End of forms page-->
+		
+		
+		
+		<!--Display Lifeguards Page-->
+		<div data-role="page" id="displayLifeguard"><!--page open-->
+		
+			<div data-role="header" data-position="fixed"><!--header open-->
+			
+				<h1>Lifeguards<h1>
+			
+			</div><!--header closed-->
+			
+			<div data-role="content"><!--content open-->
+			
+				<ul>
+					<li>Test</li>
+				</ul>
+				
+			</div>
+			
+			<button id="deleteItem">Delete Lifeguard</button>
+			<button id="editItem">Edit Item</button>
+	
+		</div><!--content closed-->
+	    <!--End Display Lifeguards Page-->
+
+
+		
+		
+	
+	
+	<!--Javascript here-->
+			<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+			<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+			<script type="text/javascript" src="jquery.validate.min.js"></script>
+			<script type="text/javascript" src="main.js"></script>
+
+
+ </body>
+		 
+		 		
+	
+  	
+	</html>
+	
+	
