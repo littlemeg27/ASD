@@ -3,9 +3,31 @@
 //Project 3
 //02/19/2013
 
+	$('#home').on("pageshow", function()
+	{
+		$.couch.db("project4").view("plugin/programs",
+		{
+			success: function(data)
+			{
+				$('#page').empty();//Naming it page until i figure out what page im going to put it on
+				$.each(data.rows, function(index, value)
+				{
+					var item = (value.value || value.doc);
+					$('#page').appendTo(
+						$('<li>').appendTo(
+						$('<a>').attr("href", "program.html")
+								.text(item.title)
+					 )
+				   ) 
+				});
+				$('#page').listview('refresh');
+			}
+		});
+	});
 	
 	
-	 $('#home').on('pageinit', function()
+	
+/* $('#home').on('pageinit', function()
 	 {
 	     alert("The home page is open");       
 	 });  
@@ -180,5 +202,5 @@
 		        });
 
 	            
-	 });   
+	 }); */  
 	 
