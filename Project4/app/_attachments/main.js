@@ -15,7 +15,7 @@
 					var item = (value.value || value.doc);
 					$('#page').appendTo(
 						$('<li>').appendTo(
-						$('<a>').attr("href", "program.html")
+						$('<a>').attr("href", "program.html?program=" + item.acronym)
 								.text(item.title)
 					 )
 				   ) 
