@@ -9,18 +9,18 @@
 		{
 			success: function(data)
 			{
-				$('#page').empty();//Naming it page until i figure out what page im going to put it on
+				$('#home').empty();//Naming it page until i figure out what page im going to put it on
 				$.each(data.rows, function(index, value)
 				{
 					var item = (value.value || value.doc);
-					$('#page').appendTo(
+					$('#home').appendTo(
 						$('<li>').appendTo(
 						$('<a>').attr("href", "program.html?program=" + item.acronym)
 								.text(item.title)
 					 )
 				   ) 
 				});
-				$('#page').listview('refresh');
+				$('#home').listview('refresh');
 			}
 		});
 	});
